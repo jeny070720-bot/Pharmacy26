@@ -1,0 +1,150 @@
+/* KNUP 개인 맞춤형 복약지도 v2.0 - 🌿 예쁜 초록색 힐링 테마 (rule_2.md 반영) */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+  /* 🌿 힐링 & 네이처 그린 컬러 팔레트 */
+  --color-primary: #059669;        /* Emerald 600 (신뢰와 치유의 메인 그린) */
+  --color-primary-light: #10B981;  /* Emerald 500 (생동감 있는 포인트) */
+  --color-primary-deep: #064E3B;   /* Emerald 900 (헤더/딥 포레스트) */
+  --color-primary-sub: #047857;    /* Emerald 700 */
+  --color-mint-light: #D1FAE5;     /* Emerald 100 (부드러운 민트 틴트) */
+  --color-mint-soft: #ECFDF5;      /* Emerald 50 (소프트 민트 배경) */
+  
+  --color-bg: #F6FBF7;             /* 페일 세이지 화이트 (눈이 편안한 초록빛 배경) */
+  --color-surface: #FFFFFF;        /* 알약 캡슐 순백색 */
+  --color-text-main: #0F172A;      /* Slate 900 */
+  --color-text-muted: #475569;     /* Slate 600 */
+  
+  /* 경고 및 상태 컬러 */
+  --color-danger: #EF4444;         /* Coral Red */
+  --color-warning: #F59E0B;        /* Amber Orange */
+  --color-safe: #10B981;           /* Fresh Green */
+}
+
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 🌿 싱그러운 포레스트 에메랄드 그라디언트 헤더 */
+.bg-forest-gradient {
+  background: linear-gradient(135deg, #064E3B 0%, #047857 40%, #059669 80%, #10B981 100%);
+}
+
+/* 알약/캡슐 모서리 헬스케어 카드 */
+.pill-card {
+  background-color: var(--color-surface);
+  border-radius: 1.25rem;
+  border: 1px solid #D1FAE5;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.05);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pill-card:hover {
+  box-shadow: 0 10px 25px -5px rgba(5, 150, 105, 0.1), 0 8px 10px -6px rgba(5, 150, 105, 0.05);
+  border-color: #A7F3D0;
+}
+
+/* 🚨 [대형 주의사항 전용 하이라이트 배너 - rule_2.md 규격] */
+.critical-alert-card {
+  border-radius: 1.25rem;
+  border-width: 2.5px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 20px -3px rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 졸림 / 운전금지 대형 경고 */
+.critical-alert-drowsiness {
+  background-color: #FEF3C7;
+  border-color: #F59E0B;
+  color: #78350F;
+}
+
+/* 음주 절대 금기 대형 경고 */
+.critical-alert-danger {
+  background-color: #FEE2E2;
+  border-color: #EF4444;
+  color: #991B1B;
+}
+
+/* 눕기 금지 / 복용법 대형 경고 */
+.critical-alert-info {
+  background-color: #EFF6FF;
+  border-color: #3B82F6;
+  color: #1E40AF;
+}
+
+/* 대형 경고 배너 제목 (20px+, ExtraBold) */
+.critical-alert-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* 스마트 토글 스위치 */
+.toggle-checkbox:checked {
+  right: 0;
+  border-color: #059669;
+}
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #059669;
+}
+
+/* 데일리 체크리스트 완료 시 취소선 */
+.med-checked-text {
+  text-decoration: line-through;
+  color: #94A3B8 !important;
+}
+
+/* 모달 블러 오버레이 */
+.modal-overlay {
+  background-color: rgba(6, 78, 59, 0.5);
+  backdrop-filter: blur(6px);
+  transition: opacity 0.25s ease-out;
+}
+
+/* 인쇄(Print) 전용 A4 서식 */
+@media print {
+  body {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    font-size: 11pt;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .pill-card {
+    border: 1px solid #CBD5E1 !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+    margin-bottom: 0.8rem !important;
+  }
+
+  header {
+    background: none !important;
+    color: #000000 !important;
+    padding: 0 !important;
+    border-bottom: 2px solid #059669;
+  }
+
+  .critical-alert-card {
+    border-width: 2px !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+}

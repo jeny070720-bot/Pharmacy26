@@ -1,0 +1,43 @@
+[
+  {
+    "id": "usr_patient01",
+    "username": "patient01",
+    "passwordHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "name": "김철수",
+    "gender": "남성",
+    "age": 58,
+    "weight": 74,
+    "conditions": [
+      "고혈압",
+      "고지혈증"
+    ],
+    "createdAt": "2026-10-30T02:14:09.254Z"
+  },
+  {
+    "id": "usr_patient02",
+    "username": "patient02",
+    "passwordHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "name": "이영희",
+    "gender": "여성",
+    "age": 62,
+    "weight": 59,
+    "conditions": [
+      "당뇨병",
+      "만성 위염/역류성 식도염"
+    ],
+    "createdAt": "2026-10-30T02:14:09.259Z"
+  },
+  {
+    "id": "usr_1793326773926_ulav",
+    "username": "jeongg413",
+    "passwordHash": "ed5ac277b90295c7f4afe9a019d45ae594e7509ad804027ddad4996fc1789553",
+    "name": "박정민",
+    "gender": "여성",
+    "age": 19,
+    "weight": 47,
+    "conditions": [
+      "만성 위염/역류성 식도염"
+    ],
+    "createdAt": "2026-10-30T02:19:33.926Z"
+  }
+]

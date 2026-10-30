@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KNUP 개인 맞춤형 복약지도 v2.0</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Pretendard Font & Custom Styles (예쁜 초록색 테마) -->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="min-h-screen flex flex-col bg-[#F6FBF7] text-slate-800">
+
+  <!-- 상단 네비게이션 헤더 (🌿 싱그러운 포레스트 에메랄드 그라디언트) -->
+  <header class="bg-forest-gradient text-white shadow-md sticky top-0 z-30">
+    <div class="max-w-5xl mx-auto px-4 py-3.5 flex items-center justify-between">
+      <!-- 로고 -->
+      <div class="flex items-center space-x-3 cursor-pointer" onclick="scrollToTop()">
+        <div class="w-10 h-10 rounded-2xl bg-white/20 backdrop-blur flex items-center justify-center text-xl text-emerald-100 shadow-inner">
+          <i class="fa-solid fa-seedling text-emerald-300"></i>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold tracking-tight flex items-center gap-2">
+            KNUP 개인 맞춤형 복약지도
+            <span class="text-[11px] bg-emerald-400/30 text-emerald-100 px-2 py-0.5 rounded-full font-semibold border border-emerald-300/30">v2.0 Care</span>
+          </h1>
+          <p class="text-xs text-emerald-100/90 hidden sm:block">환자 본인 전용 보관함 · 다회 복약 스케줄러 · 안전 주의 경고</p>
+        </div>
+      </div>
+      
+      <!-- 헤더 우측 메뉴 (로그인 상태에 따라 동적 변경) -->
+      <div class="flex items-center space-x-2 no-print" id="header-user-area">
+        <!-- JS에서 동적 주입 -->
+      </div>
+    </div>
+  </header>
+
+  <!-- 메인 컨테이너 -->
+  <main class="flex-1 max-w-5xl w-full mx-auto px-4 py-6 sm:py-8">
+
+    <!-- 1. 안내 배너 (v2.0 특징 요약) -->
+    <div id="intro-banner" class="pill-card p-4 sm:p-5 mb-6 border-l-4 border-l-emerald-600 bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4 no-print">
+      <div class="flex items-start space-x-3.5">
+        <div class="text-2xl text-emerald-600 mt-0.5">
+          <i class="fa-solid fa-shield-heart"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h2 class="font-bold text-slate-800 text-sm sm:text-base">안전한 환자 맞춤 복약지도 (하루 다회 복용 & 자동 추천 지원)</h2>
+            <span class="text-[11px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full">본인 기록 보관</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1">
+            복용 시간을 잘 몰라도 <strong>스마트 자동 추천</strong>으로 최적 시간을 정해주며, <strong>졸림·운전금지</strong> 등 핵심 주의사항을 크게 안내합니다.
+          </p>
+        </div>
+      </div>
+      <!-- 빠른 데모 샘플 입력 버튼 -->
+      <div class="flex items-center gap-2 self-end md:self-center shrink-0">
+        <span class="text-xs text-slate-400">빠른 예시:</span>
+        <button type="button" onclick="loadSamplePreset('allergy')" class="text-xs px-2.5 py-1 bg-amber-50 hover:bg-amber-100 text-amber-800 rounded-lg border border-amber-200 transition font-medium">
+          😴 비염(졸림주의)+위장약
+        </button>
+        <button type="button" onclick="loadSamplePreset('hypertension_multi')" class="text-xs px-2.5 py-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 rounded-lg border border-emerald-200 transition font-medium">
+          💊 고혈압+1일3회 소염진통
+        </button>
+      </div>
+    </div>
+
+    <!-- 2. 입력 폼 섹션 (Form Section) -->
+    <section id="input-section" class="pill-card p-6 sm:p-8 bg-white mb-8 no-print">
+      <div class="border-b border-emerald-100 pb-4 mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <h2 class="text-lg sm:text-xl font-bold text-slate-900 flex items-center gap-2">
+            <i class="fa-solid fa-file-waveform text-emerald-600"></i>
+            환자 정보 및 복용 약물 등록
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-0.5">
+            로그인한 환자 본인의 안전한 복약 분석을 위해 정보를 입력해 주세요.
+          </p>
+        </div>
+        <div id="login-status-hint" class="text-xs text-slate-500 bg-emerald-50/80 px-3 py-1.5 rounded-lg border border-emerald-200 flex items-center gap-1.5 self-start sm:self-auto">
+          <!-- 로그인 안내 텍스트 -->
+        </div>
+      </div>
+
+      <form id="medication-form" onsubmit="handleFormSubmit(event)">
+        <!-- 1단계: 기본 신체 정보 -->
+        <div class="mb-6">
+          <h3 class="text-sm font-semibold text-slate-700 mb-3 flex items-center gap-1.5">
+            <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-800 text-xs flex items-center justify-center font-bold">1</span>
+            환자 기본 정보
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-4 gap-4">
+            <div>
+              <label class="block text-xs font-medium text-slate-600 mb-1">환자 이름 <span class="text-rose-500">*</span></label>
+              <input type="text" id="patient-name" required placeholder="예: 김철수" class="w-full px-3 py-2 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-slate-600 mb-1">성별 <span class="text-rose-500">*</span></label>
+              <div class="grid grid-cols-2 gap-2">
+                <label class="flex items-center justify-center py-2 px-3 text-sm border border-slate-200 rounded-xl cursor-pointer hover:bg-slate-50 has-[:checked]:bg-emerald-50 has-[:checked]:border-emerald-500 has-[:checked]:text-emerald-700 font-medium transition">
+                  <input type="radio" name="gender" value="M" checked class="hidden">
+                  <span>남성</span>
+                </label>
+                <label class="flex items-center justify-center py-2 px-3 text-sm border border-slate-200 rounded-xl cursor-pointer hover:bg-slate-50 has-[:checked]:bg-emerald-50 has-[:checked]:border-emerald-500 has-[:checked]:text-emerald-700 font-medium transition">
+                  <input type="radio" name="gender" value="F" class="hidden">
+                  <span>여성</span>
+                </label>
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-slate-600 mb-1">나이 (만) <span class="text-rose-500">*</span></label>
+              <input type="number" id="patient-age" required min="1" max="120" placeholder="예: 58" class="w-full px-3 py-2 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-slate-600 mb-1">몸무게 (kg) <span class="text-rose-500">*</span></label>
+              <input type="number" id="patient-weight" required min="10" max="250" step="0.1" placeholder="예: 74" class="w-full px-3 py-2 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            </div>
+          </div>
+        </div>
+
+        <!-- 2단계: 기저 질환 선택 -->
+        <div class="mb-6">
+          <h3 class="text-sm font-semibold text-slate-700 mb-2 flex items-center gap-1.5">
+            <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-800 text-xs flex items-center justify-center font-bold">2</span>
+            보유 기저 질환 (중복 선택 가능)
+          </h3>
+          <p class="text-xs text-slate-500 mb-3">해당되는 질환을 클릭하세요. (식단 및 운동 코칭에 맞춤 반영됩니다)</p>
+          
+          <div class="flex flex-wrap gap-2 mb-3" id="disease-chips">
+            <button type="button" onclick="toggleDiseaseChip(this, '고혈압')" class="disease-chip px-3 py-1.5 text-xs sm:text-sm rounded-full border border-slate-200 hover:border-emerald-500 transition">고혈압</button>
+            <button type="button" onclick="toggleDiseaseChip(this, '당뇨병')" class="disease-chip px-3 py-1.5 text-xs sm:text-sm rounded-full border border-slate-200 hover:border-emerald-500 transition">당뇨병</button>
+            <button type="button" onclick="toggleDiseaseChip(this, '고지혈증')" class="disease-chip px-3 py-1.5 text-xs sm:text-sm rounded-full border border-slate-200 hover:border-emerald-500 transition">고지혈증</button>
+            <button type="button" onclick="toggleDiseaseChip(this, '만성 위염/역류성 식도염')" class="disease-chip px-3 py-1.5 text-xs sm:text-sm rounded-full border border-slate-200 hover:border-emerald-500 transition">만성 위염/역류성 식도염</button>
+            <button type="button" onclick="toggleDiseaseChip(this, '골다공증')" class="disease-chip px-3 py-1.5 text-xs sm:text-sm rounded-full border border-slate-200 hover:border-emerald-500 transition">골다공증</button>
+            <button type="button" onclick="toggleDiseaseChip(this, '만성신부전/신장질환')" class="disease-chip px-3 py-1.5 text-xs sm:text-sm rounded-full border border-slate-200 hover:border-emerald-500 transition">신장 질환</button>
+            <button type="button" onclick="toggleDiseaseChip(this, '천식/알레르기 비염')" class="disease-chip px-3 py-1.5 text-xs sm:text-sm rounded-full border border-slate-200 hover:border-emerald-500 transition">천식/알레르기 비염</button>
+          </div>
+
+          <div class="flex items-center gap-2 max-w-sm">
+            <input type="text" id="custom-condition-input" placeholder="기타 질환 직접 입력 (예: 관절염)" class="flex-1 px-3 py-1.5 text-xs sm:text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-1 focus:ring-emerald-500">
+            <button type="button" onclick="addCustomCondition()" class="px-3 py-1.5 text-xs sm:text-sm bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl font-medium">추가</button>
+          </div>
+        </div>
+
+        <!-- 3단계: 복용 중인 약물 등록 (하루 다회 복용 & 스마트 자동 추천) -->
+        <div class="mb-8">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-sm font-semibold text-slate-700 flex items-center gap-1.5">
+              <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-800 text-xs flex items-center justify-center font-bold">3</span>
+              복용 중인 약물 등록 <span class="text-rose-500">*</span>
+            </h3>
+            <span class="text-xs text-slate-500">등록된 약물: <strong id="med-count-badge" class="text-emerald-600 font-bold">0</strong>개</span>
+          </div>
+
+          <!-- 약물 입력 카드 박스 -->
+          <div class="p-4 sm:p-5 bg-[#F6FBF7] border border-emerald-200/80 rounded-2xl mb-4">
+            <!-- 1열: 약품명 검색 & 자동완성 -->
+            <div class="mb-3">
+              <label class="block text-xs font-semibold text-slate-700 mb-1">약품명 (성분명 또는 상품명 검색)</label>
+              <div class="relative">
+                <input type="text" id="med-search-input" autocomplete="off" placeholder="예: 레보세티리진, 이부프로펜, 암로디핀, 타이레놀..." class="w-full px-3.5 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white">
+                <div id="autocomplete-list" class="absolute left-0 right-0 top-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg z-20 max-h-48 overflow-y-auto hidden"></div>
+              </div>
+            </div>
+
+            <!-- 2열: 스마트 자동 추천 스위치 & 복용 횟수 / 시간대 설정 -->
+            <div class="p-3.5 bg-white rounded-xl border border-emerald-100 mb-3 space-y-3">
+              <!-- 스마트 자동 추천 토글 스위치 -->
+              <div class="flex items-center justify-between">
+                <div>
+                  <strong class="text-xs sm:text-sm text-emerald-900 flex items-center gap-1.5">
+                    <i class="fa-solid fa-wand-magic-sparkles text-emerald-600"></i>
+                    복용 시간을 잘 모르시나요?
+                  </strong>
+                  <p class="text-[11px] text-slate-500">약의 성질(졸림 유발, 위장장애 여부 등)을 분석해 최적의 시간대를 알아서 정해드립니다.</p>
+                </div>
+                <label class="flex items-center cursor-pointer select-none">
+                  <input type="checkbox" id="auto-schedule-toggle" checked onchange="toggleAutoScheduleMode(this.checked)" class="sr-only">
+                  <div class="w-11 h-6 bg-emerald-600 rounded-full transition-colors relative" id="toggle-bg">
+                    <div class="dot absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform translate-x-5" id="toggle-dot"></div>
+                  </div>
+                  <span class="ml-2 text-xs font-bold text-emerald-800" id="toggle-text">자동 추천 ON</span>
+                </label>
+              </div>
+
+              <!-- 수동 설정 영역 (자동 추천 OFF 시 표시) -->
+              <div id="manual-schedule-area" class="hidden pt-3 border-t border-slate-100">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <label class="block text-xs font-medium text-slate-600 mb-1">하루 복용 횟수</label>
+                    <div class="grid grid-cols-4 gap-1.5" id="freq-chips">
+                      <button type="button" onclick="selectFrequency('1일 1회')" class="freq-chip py-1.5 text-xs rounded-lg border border-emerald-500 bg-emerald-50 text-emerald-700 font-bold">1일 1회</button>
+                      <button type="button" onclick="selectFrequency('1일 2회')" class="freq-chip py-1.5 text-xs rounded-lg border border-slate-200 hover:border-emerald-400">1일 2회</button>
+                      <button type="button" onclick="selectFrequency('1일 3회')" class="freq-chip py-1.5 text-xs rounded-lg border border-slate-200 hover:border-emerald-400">1일 3회</button>
+                      <button type="button" onclick="selectFrequency('1일 4회')" class="freq-chip py-1.5 text-xs rounded-lg border border-slate-200 hover:border-emerald-400">1일 4회</button>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-xs font-medium text-slate-600 mb-1">복용 시간대 (다중 선택 가능)</label>
+                    <div class="flex flex-wrap gap-1.5">
+                      <label class="flex items-center text-xs px-2.5 py-1.5 rounded-lg border border-slate-200 cursor-pointer has-[:checked]:bg-emerald-50 has-[:checked]:border-emerald-500 has-[:checked]:text-emerald-800 font-medium">
+                        <input type="checkbox" name="manual_timing" value="morning_before" class="hidden"> 🌅 아침 식전
+                      </label>
+                      <label class="flex items-center text-xs px-2.5 py-1.5 rounded-lg border border-slate-200 cursor-pointer has-[:checked]:bg-emerald-50 has-[:checked]:border-emerald-500 has-[:checked]:text-emerald-800 font-medium">
+                        <input type="checkbox" name="manual_timing" value="morning_after" checked class="hidden"> 🥣 아침 식후
+                      </label>
+                      <label class="flex items-center text-xs px-2.5 py-1.5 rounded-lg border border-slate-200 cursor-pointer has-[:checked]:bg-emerald-50 has-[:checked]:border-emerald-500 has-[:checked]:text-emerald-800 font-medium">
+                        <input type="checkbox" name="manual_timing" value="lunch_after" class="hidden"> ☀️ 점심 식후
+                      </label>
+                      <label class="flex items-center text-xs px-2.5 py-1.5 rounded-lg border border-slate-200 cursor-pointer has-[:checked]:bg-emerald-50 has-[:checked]:border-emerald-500 has-[:checked]:text-emerald-800 font-medium">
+                        <input type="checkbox" name="manual_timing" value="evening_after" class="hidden"> 🌙 저녁 식후
+                      </label>
+                      <label class="flex items-center text-xs px-2.5 py-1.5 rounded-lg border border-slate-200 cursor-pointer has-[:checked]:bg-emerald-50 has-[:checked]:border-emerald-500 has-[:checked]:text-emerald-800 font-medium">
+                        <input type="checkbox" name="manual_timing" value="bedtime" class="hidden"> 🛌 취침 전
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3열: 추가 버튼 -->
+            <button type="button" onclick="handleAddMedication()" class="w-full py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-sm font-bold transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-plus"></i>
+              <span>약물 목록에 추가하기</span>
+            </button>
+
+            <!-- 빠른 원클릭 추천 약물 태그 -->
+            <div class="mt-3 pt-3 border-t border-emerald-100 flex items-center flex-wrap gap-1.5">
+              <span class="text-xs text-slate-400 mr-1">추천 약물:</span>
+              <button type="button" onclick="quickAddMed('레보세티리진')" class="text-xs px-2 py-0.5 bg-amber-50 border border-amber-200 rounded hover:border-amber-400 text-amber-900 transition">레보세티리진(😴졸림주의)</button>
+              <button type="button" onclick="quickAddMed('이부프로펜')" class="text-xs px-2 py-0.5 bg-white border border-slate-200 rounded hover:border-emerald-500 text-slate-700 transition">이부프로펜(1일3회)</button>
+              <button type="button" onclick="quickAddMed('오메프라졸')" class="text-xs px-2 py-0.5 bg-white border border-slate-200 rounded hover:border-emerald-500 text-slate-700 transition">오메프라졸(아침식전)</button>
+              <button type="button" onclick="quickAddMed('암로디핀')" class="text-xs px-2 py-0.5 bg-white border border-slate-200 rounded hover:border-emerald-500 text-slate-700 transition">암로디핀(혈압)</button>
+              <button type="button" onclick="quickAddMed('아토르바스타틴')" class="text-xs px-2 py-0.5 bg-white border border-slate-200 rounded hover:border-emerald-500 text-slate-700 transition">아토르바스타틴(저녁식후)</button>
+            </div>
+          </div>
+
+          <!-- 등록된 약물 리스트 카드들 -->
+          <div id="added-meds-list" class="space-y-2">
+            <!-- JS 동적 주입 -->
+          </div>
+        </div>
+
+        <!-- 최종 제출 버튼 -->
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-end gap-3">
+          <button type="button" onclick="resetForm()" class="px-5 py-2.5 text-sm font-medium text-slate-600 hover:bg-slate-100 rounded-xl transition">
+            초기화
+          </button>
+          <button type="submit" id="btn-submit-guidance" class="px-7 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-sm font-extrabold shadow-md hover:shadow-lg transition flex items-center gap-2">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>맞춤형 복약지도 분석 시작</span>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- 3. 결과 리포트 섹션 (Guidance Report Section) -->
+    <section id="result-section" class="hidden space-y-6">
+
+      <!-- 결과 상단 헤더 & 인쇄 컨트롤 바 -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-2 gap-3 no-print">
+        <div>
+          <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 uppercase tracking-wider">Analysis Complete</span>
+          <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">KNUP 맞춤형 복약지도 리포트</h2>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="window.print()" class="px-4 py-2 bg-slate-800 hover:bg-slate-900 text-white rounded-xl text-xs sm:text-sm font-medium transition flex items-center gap-1.5 shadow-sm">
+            <i class="fa-solid fa-print"></i>
+            <span>A4 복약지도서 인쇄</span>
+          </button>
+          <button onclick="editCurrentProfile()" class="px-4 py-2 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 rounded-xl text-xs sm:text-sm font-medium transition flex items-center gap-1.5 shadow-sm">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <span>처방 수정</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- [A4 인쇄 전용 헤더] -->
+      <div class="hidden print-only mb-6 border-b-2 border-emerald-700 pb-3">
+        <div class="flex justify-between items-end">
+          <div>
+            <h1 class="print-title font-bold text-2xl text-emerald-800">KNUP 개인 맞춤형 복약지도서</h1>
+            <p class="text-xs text-slate-500">발행일시: <span id="print-date"></span> | 환자 본인 전용 처방 가이드</p>
+          </div>
+          <div class="text-right text-xs text-slate-600">
+            <strong>KNUP Pharmacy Care System</strong><br>
+            환자 중심 안전 복약 지원 웹 서비스
+          </div>
+        </div>
+      </div>
+
+      <!-- 🚨 [대형 주의사항 전용 하이라이트 배너 - rule_2.md 규격] -->
+      <!-- 졸림, 운전금지, 음주금기 등 일상 위험 요소를 크게 강조 -->
+      <div id="critical-warnings-banner-container" class="space-y-3">
+        <!-- JS에서 대형 경고 카드 주입 -->
+      </div>
+
+      <!-- [A] 환자 프로필 요약 카드 & 종합 DDI 안전 등급 -->
+      <div class="pill-card p-5 sm:p-6 bg-white border-l-4 border-l-emerald-600">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div class="flex items-center space-x-4">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-600 text-xl font-bold">
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <h3 class="text-lg font-bold text-slate-900" id="res-patient-name">김철수</h3>
+                <span class="text-xs px-2 py-0.5 rounded-md bg-slate-100 text-slate-600 font-medium" id="res-patient-meta">남성 · 만 58세 · 74kg</span>
+              </div>
+              <div class="flex items-center flex-wrap gap-1.5 mt-1.5" id="res-patient-conditions">
+                <!-- 질환 태그 -->
+              </div>
+            </div>
+          </div>
+          <div class="bg-[#F6FBF7] p-3 rounded-xl border border-emerald-200 flex items-center gap-3 self-start sm:self-auto">
+            <div class="text-right">
+              <span class="text-xs text-slate-500 block">약물 상호작용 종합 안전도</span>
+              <strong class="text-sm sm:text-base font-bold" id="res-safety-score">안전</strong>
+            </div>
+            <div id="res-safety-icon" class="w-9 h-9 rounded-full flex items-center justify-center text-white text-base bg-emerald-500">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- [B] 오늘의 복약 체크리스트 (하루 다회 복용 완벽 지원) -->
+      <div class="pill-card p-5 sm:p-6 bg-white">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 border-b border-slate-100 pb-3">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-calendar-check text-emerald-600 text-lg"></i>
+            <h3 class="font-bold text-slate-900 text-base">오늘의 복약 체크 (Daily Tracker)</h3>
+            <span class="text-xs text-slate-400">하루 여러 번 복용하는 약물도 시간대별로 체크됩니다</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-xs text-slate-600 font-medium">오늘 달성률: <strong id="adherence-percent" class="text-emerald-600 font-bold">0%</strong></span>
+            <div class="w-28 sm:w-36 bg-slate-100 rounded-full h-2.5 overflow-hidden">
+              <div id="adherence-bar" class="bg-emerald-600 h-2.5 rounded-full transition-all duration-300" style="width: 0%"></div>
+            </div>
+          </div>
+        </div>
+        <div id="daily-checklist-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+          <!-- JS 동적 주입 -->
+        </div>
+      </div>
+
+      <!-- [C] 시간대별 맞춤 복약 타임라인 (Timeline Schedule) -->
+      <div class="pill-card p-5 sm:p-6 bg-white">
+        <div class="flex items-center justify-between mb-5 border-b border-slate-100 pb-3">
+          <h3 class="font-bold text-slate-900 text-base flex items-center gap-2">
+            <i class="fa-solid fa-clock text-emerald-600"></i>
+            시간대별 최적 복약 타임라인
+          </h3>
+          <span class="text-xs text-emerald-800 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-full font-medium">다회 복약 스케줄 정밀 분배</span>
+        </div>
+        <div id="timeline-container" class="space-y-5">
+          <!-- 타임라인 카드 렌더링 -->
+        </div>
+      </div>
+
+      <!-- [D] 약물 간 상호작용(DDI) 및 중복 처방 경고 -->
+      <div class="pill-card p-5 sm:p-6 bg-white">
+        <div class="flex items-center gap-2 mb-4 border-b border-slate-100 pb-3">
+          <i class="fa-solid fa-triangle-exclamation text-amber-500 text-lg"></i>
+          <h3 class="font-bold text-slate-900 text-base">약물 간 상호작용 및 중복 처방 경고 (DDI)</h3>
+        </div>
+        <div id="ddi-warnings-container" class="space-y-3">
+          <!-- DDI 경고 -->
+        </div>
+      </div>
+
+      <!-- [E] 약과 함께 먹으면 안 되는 음식/음료 -->
+      <div class="pill-card p-5 sm:p-6 bg-white">
+        <div class="flex items-center gap-2 mb-4 border-b border-slate-100 pb-3">
+          <i class="fa-solid fa-ban text-rose-500 text-lg"></i>
+          <h3 class="font-bold text-slate-900 text-base">약과 함께 먹으면 안 되는 식품 / 음료</h3>
+        </div>
+        <div id="food-warnings-container" class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+          <!-- 음식 경고 -->
+        </div>
+      </div>
+
+      <!-- [F] 영양제 병용 팁 -->
+      <div class="pill-card p-5 sm:p-6 bg-white">
+        <div class="flex items-center gap-2 mb-4 border-b border-slate-100 pb-3">
+          <i class="fa-solid fa-wand-magic-sparkles text-emerald-600 text-lg"></i>
+          <h3 class="font-bold text-slate-900 text-base">약물 맞춤 영양제 병용 가이드</h3>
+        </div>
+        <div id="supplements-container" class="space-y-2.5">
+          <!-- 영양제 가이드 -->
+        </div>
+      </div>
+
+      <!-- [G] 맞춤 식단 & 운동 가이드 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="pill-card p-5 sm:p-6 bg-white">
+          <div class="flex items-center gap-2 mb-4 border-b border-slate-100 pb-3">
+            <i class="fa-solid fa-utensils text-emerald-600 text-lg"></i>
+            <h3 class="font-bold text-slate-900 text-base">질환 맞춤 추천 식단 (Diet)</h3>
+          </div>
+          <div id="diet-plans-container" class="space-y-4"></div>
+        </div>
+
+        <div class="pill-card p-5 sm:p-6 bg-white">
+          <div class="flex items-center gap-2 mb-4 border-b border-slate-100 pb-3">
+            <i class="fa-solid fa-person-walking text-emerald-600 text-lg"></i>
+            <h3 class="font-bold text-slate-900 text-base">나이·체중 맞춤 운동 가이드</h3>
+          </div>
+          <div id="exercise-plan-container"></div>
+        </div>
+      </div>
+
+      <!-- [H] 약학정보원 스타일 보관법 및 부작용 대처 -->
+      <div class="pill-card p-5 sm:p-6 bg-white">
+        <div class="flex items-center gap-2 mb-4 border-b border-slate-100 pb-3">
+          <i class="fa-solid fa-box-archive text-slate-600 text-lg"></i>
+          <h3 class="font-bold text-slate-900 text-base">약품별 올바른 보관법 및 이상반응 대처 요령 (약학정보원)</h3>
+        </div>
+        <div id="storage-sideeffects-container" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+      </div>
+
+      <!-- 하단 액션 바 -->
+      <div class="flex items-center justify-between p-4 bg-slate-900 text-white rounded-2xl shadow-lg no-print">
+        <div class="text-xs sm:text-sm">
+          <span>이 복약지도는 <strong>본인 전용 보관함</strong>에 안전하게 저장되었습니다.</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="window.print()" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold transition">
+            <i class="fa-solid fa-print mr-1"></i> A4 인쇄
+          </button>
+          <button onclick="resetToNewForm()" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-xl text-xs font-semibold transition">
+            새 환자 작성
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="bg-white border-t border-emerald-100 mt-12 py-6 no-print">
+    <div class="max-w-5xl mx-auto px-4 text-center text-xs text-slate-500 space-y-1">
+      <p class="font-bold text-emerald-900">KNUP 개인 맞춤형 복약지도 시스템 v2.0 (Port 3000)</p>
+      <p>약학정보원(health.kr), 약먹자(yakmeokja.com), 약사이(yaksai.co.kr)의 복약 분석 원리를 기반으로 환자 본인의 안전한 복약을 돕습니다.</p>
+    </div>
+  </footer>
+
+  <!-- 1. 로그인 / 회원가입 모달 -->
+  <div id="auth-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 modal-overlay hidden">
+    <div class="bg-white rounded-3xl max-w-md w-full shadow-2xl overflow-hidden border border-emerald-100">
+      <div class="p-6 bg-forest-gradient text-white flex items-center justify-between">
+        <div>
+          <h3 class="text-lg font-bold">환자 로그인</h3>
+          <p class="text-xs text-emerald-100 mt-0.5">내 복약지도 기록을 안전하게 보호합니다.</p>
+        </div>
+        <button onclick="closeAuthModal()" class="text-white/80 hover:text-white text-lg p-1">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="p-6 space-y-4">
+        <!-- 탭 전환 -->
+        <div class="grid grid-cols-2 gap-2 bg-slate-100 p-1 rounded-xl text-xs font-bold">
+          <button type="button" id="tab-btn-login" onclick="switchAuthTab('login')" class="py-2 rounded-lg bg-white shadow-sm text-emerald-800">로그인</button>
+          <button type="button" id="tab-btn-register" onclick="switchAuthTab('register')" class="py-2 rounded-lg text-slate-600">간편 회원가입</button>
+        </div>
+
+        <!-- 로그인 폼 -->
+        <form id="login-form" onsubmit="handleLoginSubmit(event)" class="space-y-3">
+          <div>
+            <label class="block text-xs font-medium text-slate-600 mb-1">아이디</label>
+            <input type="text" id="login-username" required placeholder="예: patient01" autocomplete="off" class="w-full px-3 py-2 text-sm border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-600 mb-1">비밀번호</label>
+            <input type="password" id="login-password" required placeholder="비밀번호" autocomplete="off" class="w-full px-3 py-2 text-sm border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+          </div>
+          <button type="submit" class="w-full py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-sm font-bold transition shadow-sm">
+            로그인하기
+          </button>
+          <!-- 1초 빠른 데모 로그인 버튼 -->
+          <div class="pt-2 border-t border-slate-100 text-center">
+            <span class="text-xs text-slate-400 block mb-1.5">체험용 빠른 로그인:</span>
+            <div class="flex items-center justify-center gap-2">
+              <button type="button" onclick="quickLoginDemo('patient01', '1234')" class="text-xs px-3 py-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 rounded-lg border border-emerald-200 font-medium">
+                김철수 환자 (58세/남)
+              </button>
+              <button type="button" onclick="quickLoginDemo('patient02', '1234')" class="text-xs px-3 py-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 rounded-lg border border-emerald-200 font-medium">
+                이영희 환자 (62세/여)
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!-- 회원가입 폼 -->
+        <form id="register-form" onsubmit="handleRegisterSubmit(event)" class="space-y-3 hidden">
+          <div>
+            <label class="block text-xs font-medium text-slate-600 mb-1">사용할 아이디 <span class="text-rose-500">*</span></label>
+            <input type="text" id="reg-username" required placeholder="예: myhealth" class="w-full px-3 py-2 text-sm border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-600 mb-1">비밀번호 <span class="text-rose-500">*</span></label>
+            <input type="password" id="reg-password" required placeholder="비밀번호 입력" class="w-full px-3 py-2 text-sm border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-600 mb-1">환자 이름 <span class="text-rose-500">*</span></label>
+            <input type="text" id="reg-name" required placeholder="예: 박지민" class="w-full px-3 py-2 text-sm border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+          </div>
+          <div class="grid grid-cols-3 gap-2">
+            <div>
+              <label class="block text-xs font-medium text-slate-600 mb-1">성별</label>
+              <select id="reg-gender" class="w-full px-2 py-2 text-xs border border-slate-200 rounded-xl bg-white">
+                <option value="남성">남성</option>
+                <option value="여성">여성</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-slate-600 mb-1">나이</label>
+              <input type="number" id="reg-age" value="45" class="w-full px-2 py-2 text-xs border border-slate-200 rounded-xl">
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-slate-600 mb-1">체중(kg)</label>
+              <input type="number" id="reg-weight" value="65" class="w-full px-2 py-2 text-xs border border-slate-200 rounded-xl">
+            </div>
+          </div>
+          <button type="submit" class="w-full py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-sm font-bold transition shadow-sm mt-2">
+            회원가입 완료
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. 과거 본인 기록 보관함 모달 -->
+  <div id="history-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 modal-overlay hidden">
+    <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[85vh] flex flex-col shadow-2xl overflow-hidden border border-emerald-100">
+      <div class="p-5 border-b border-emerald-100 flex items-center justify-between bg-[#F6FBF7]">
+        <div>
+          <h3 class="font-bold text-slate-900 text-base sm:text-lg flex items-center gap-2">
+            <i class="fa-solid fa-clock-rotate-left text-emerald-600"></i>
+            환자 본인 복약지도 보관함
+          </h3>
+          <p class="text-xs text-slate-500 mt-0.5">내가 과거에 신청했던 복약지도만 안전하게 보관됩니다.</p>
+        </div>
+        <button onclick="closeHistoryModal()" class="text-slate-400 hover:text-slate-700 p-1 rounded-lg">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <div id="history-list-container" class="p-5 overflow-y-auto flex-1 space-y-3">
+        <!-- JS 동적 주입 -->
+      </div>
+
+      <div class="p-4 border-t border-slate-100 bg-slate-50 flex justify-end">
+        <button onclick="closeHistoryModal()" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 text-xs sm:text-sm font-medium rounded-xl transition">
+          닫기
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript 모듈 -->
+  <script src="/js/history.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
