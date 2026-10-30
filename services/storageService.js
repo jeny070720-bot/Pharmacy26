@@ -2,8 +2,10 @@ const fs = require('fs');
 const path = require('path');
 
 const historyFilePath = path.join(__dirname, '..', 'data', 'history.json');
+let memoryCache = null;
 
 function loadHistory() {
+  if (memoryCache) return memoryCache;
   try {
     if (!fs.existsSync(historyFilePath)) {
       // 데모 환자용 초기 이력 데이터
@@ -114,11 +116,13 @@ function loadHistory() {
           createdAt: new Date(Date.now() - 86400000 * 2).toISOString()
         }
       ];
-      fs.writeFileSync(historyFilePath, JSON.stringify(initialData, null, 2), 'utf8');
+      try { fs.writeFileSync(historyFilePath, JSON.stringify(initialData, null, 2), 'utf8'); } catch (e) {}
+      memoryCache = initialData;
       return initialData;
     }
     const data = fs.readFileSync(historyFilePath, 'utf8');
-    return JSON.parse(data);
+    memoryCache = JSON.parse(data);
+    return memoryCache;
   } catch (err) {
     console.error('[Storage Error] Failed to read history:', err);
     return [];
@@ -126,6 +130,7 @@ function loadHistory() {
 }
 
 function saveHistory(list) {
+  memoryCache = list;
   try {
     fs.writeFileSync(historyFilePath, JSON.stringify(list, null, 2), 'utf8');
     return true;

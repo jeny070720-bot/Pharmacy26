@@ -1,5 +1,2703 @@
 [
   {
+    "id": "rec_1793355858347_v3k5w",
+    "userId": "usr_guest",
+    "patientName": "미ㅏㅇ",
+    "gender": "남성",
+    "age": 20,
+    "weight": 20,
+    "conditions": [],
+    "medications": [
+      {
+        "id": "atorvastatin",
+        "name": "아토르바스타틴",
+        "inputName": "아토르바스타틴",
+        "category": "이상지질혈증(고지혈증) 치료제 (스타틴계)",
+        "efficacy": "혈중 LDL 콜레스테롤 및 중성지방 감소, 심혈관 질환 예방",
+        "timings": [
+          "evening_after"
+        ],
+        "frequency": "1일 1회",
+        "isAutoScheduled": true,
+        "scheduleReason": "간에서 콜레스테롤 합성이 활발한 시간대에 맞춰 '저녁 식후'로 자동 지정되었습니다.",
+        "dosage": "1일 1회 10~20mg (저녁 식후)",
+        "storage": "실온(15~25℃) 습기를 피하여 보관",
+        "criticalWarnings": [
+          {
+            "type": "grapefruit",
+            "severity": "danger",
+            "icon": "fa-ban",
+            "badge": "🚨 자몽 및 자몽주스 절대 섭취 금지",
+            "title": "자몽 성분이 약물 농도를 폭증시켜 근육 괴사를 부릅니다!",
+            "detail": "자몽이 간 대사를 방해하여 심각한 근육 손상(횡문근융해증) 및 급성 신부전을 일으킬 수 있습니다."
+          },
+          {
+            "type": "muscle_pain",
+            "severity": "high",
+            "icon": "fa-person-dots-from-line",
+            "badge": "⚠️ 원인 모를 근육통 발생 시 즉시 문의",
+            "title": "종아리나 허벅지 등에 이유 없는 심한 근육통이 생기면 복용을 멈추세요.",
+            "detail": "콜라색/갈색 소변이나 심한 근육통이 나타나면 즉시 병원 진료를 받아야 합니다."
+          }
+        ],
+        "administrationTips": [
+          "간에서 콜레스테롤 합성이 가장 활발한 저녁 식후 복용 시 효과가 가장 뛰어납니다.",
+          "이유 없는 근육통, 근육 경련, 붉은 소변이 나타나면 즉시 진료를 받으세요."
+        ],
+        "sideEffects": "근육통, 소화불량, 간 수치 상승.",
+        "foodWarnings": [
+          {
+            "food": "자몽 및 자몽주스",
+            "severity": "danger",
+            "reason": "체내 스타틴 농도가 3~4배 이상 폭증하여 횡문근융해증을 유발합니다."
+          }
+        ],
+        "supplementTips": "스타틴 복용 시 체내 코엔자임Q10이 고갈되므로 CoQ10 영양제 병용을 권장합니다."
+      }
+    ],
+    "criticalWarnings": [
+      {
+        "type": "grapefruit",
+        "severity": "danger",
+        "icon": "fa-ban",
+        "badge": "🚨 자몽 및 자몽주스 절대 섭취 금지",
+        "title": "자몽 성분이 약물 농도를 폭증시켜 근육 괴사를 부릅니다!",
+        "detail": "자몽이 간 대사를 방해하여 심각한 근육 손상(횡문근융해증) 및 급성 신부전을 일으킬 수 있습니다.",
+        "drugName": "아토르바스타틴"
+      },
+      {
+        "type": "muscle_pain",
+        "severity": "high",
+        "icon": "fa-person-dots-from-line",
+        "badge": "⚠️ 원인 모를 근육통 발생 시 즉시 문의",
+        "title": "종아리나 허벅지 등에 이유 없는 심한 근육통이 생기면 복용을 멈추세요.",
+        "detail": "콜라색/갈색 소변이나 심한 근육통이 나타나면 즉시 병원 진료를 받아야 합니다.",
+        "drugName": "아토르바스타틴"
+      }
+    ],
+    "safetyScore": "안전",
+    "timeline": [
+      {
+        "key": "morning_before",
+        "title": "아침 식전 (식사 30분 전)",
+        "icon": "🌅",
+        "time": "07:30",
+        "items": []
+      },
+      {
+        "key": "morning_after",
+        "title": "아침 식후 (식사 30분 후)",
+        "icon": "🥣",
+        "time": "08:30",
+        "items": []
+      },
+      {
+        "key": "lunch_after",
+        "title": "점심 식후 (식사 30분 후)",
+        "icon": "☀️",
+        "time": "13:00",
+        "items": []
+      },
+      {
+        "key": "evening_after",
+        "title": "저녁 식후 (식사 30분 후)",
+        "icon": "🌙",
+        "time": "19:00",
+        "items": [
+          {
+            "id": "atorvastatin",
+            "name": "아토르바스타틴",
+            "inputName": "아토르바스타틴",
+            "category": "이상지질혈증(고지혈증) 치료제 (스타틴계)",
+            "efficacy": "혈중 LDL 콜레스테롤 및 중성지방 감소, 심혈관 질환 예방",
+            "timings": [
+              "evening_after"
+            ],
+            "frequency": "1일 1회",
+            "isAutoScheduled": true,
+            "scheduleReason": "간에서 콜레스테롤 합성이 활발한 시간대에 맞춰 '저녁 식후'로 자동 지정되었습니다.",
+            "dosage": "1일 1회 10~20mg (저녁 식후)",
+            "storage": "실온(15~25℃) 습기를 피하여 보관",
+            "criticalWarnings": [
+              {
+                "type": "grapefruit",
+                "severity": "danger",
+                "icon": "fa-ban",
+                "badge": "🚨 자몽 및 자몽주스 절대 섭취 금지",
+                "title": "자몽 성분이 약물 농도를 폭증시켜 근육 괴사를 부릅니다!",
+                "detail": "자몽이 간 대사를 방해하여 심각한 근육 손상(횡문근융해증) 및 급성 신부전을 일으킬 수 있습니다."
+              },
+              {
+                "type": "muscle_pain",
+                "severity": "high",
+                "icon": "fa-person-dots-from-line",
+                "badge": "⚠️ 원인 모를 근육통 발생 시 즉시 문의",
+                "title": "종아리나 허벅지 등에 이유 없는 심한 근육통이 생기면 복용을 멈추세요.",
+                "detail": "콜라색/갈색 소변이나 심한 근육통이 나타나면 즉시 병원 진료를 받아야 합니다."
+              }
+            ],
+            "administrationTips": [
+              "간에서 콜레스테롤 합성이 가장 활발한 저녁 식후 복용 시 효과가 가장 뛰어납니다.",
+              "이유 없는 근육통, 근육 경련, 붉은 소변이 나타나면 즉시 진료를 받으세요."
+            ],
+            "sideEffects": "근육통, 소화불량, 간 수치 상승.",
+            "foodWarnings": [
+              {
+                "food": "자몽 및 자몽주스",
+                "severity": "danger",
+                "reason": "체내 스타틴 농도가 3~4배 이상 폭증하여 횡문근융해증을 유발합니다."
+              }
+            ],
+            "supplementTips": "스타틴 복용 시 체내 코엔자임Q10이 고갈되므로 CoQ10 영양제 병용을 권장합니다.",
+            "currentSlot": "evening_after"
+          }
+        ]
+      },
+      {
+        "key": "bedtime",
+        "title": "취침 전 (잠들기 30분~1시간 전)",
+        "icon": "🛌",
+        "time": "22:30",
+        "items": []
+      }
+    ],
+    "ddiWarnings": [],
+    "foodWarnings": [
+      {
+        "food": "자몽 및 자몽주스",
+        "severity": "danger",
+        "reason": "체내 스타틴 농도가 3~4배 이상 폭증하여 횡문근융해증을 유발합니다.",
+        "relatedDrugs": [
+          "아토르바스타틴"
+        ]
+      }
+    ],
+    "supplements": [
+      {
+        "drug": "아토르바스타틴",
+        "tip": "스타틴 복용 시 체내 코엔자임Q10이 고갈되므로 CoQ10 영양제 병용을 권장합니다."
+      }
+    ],
+    "dietPlans": [
+      {
+        "condition": "일반 건강 관리",
+        "recommend": [
+          "균형 잡힌 잡곡밥과 신선한 채소",
+          "고단백 저지방 생선 및 두부",
+          "계절 과일 적정량"
+        ],
+        "avoid": [
+          "고나트륨 찌개 및 가공육",
+          "단순당 함유 탄산음료",
+          "잦은 야식"
+        ],
+        "waterIntake": "하루 1.5~2L 충분한 수분 섭취",
+        "keyTip": "규칙적인 식사 리듬을 유지해 약물 흡수를 일정하게 돕습니다."
+      }
+    ],
+    "exercisePlan": {
+      "ageGroup": "청장년층 (20~40대)",
+      "recommend": [
+        "중강도 유산소 30분 (조깅, 수영, 자전거) 주 3~5회",
+        "주 2회 근력 운동"
+      ],
+      "intensity": "약간 숨이 차고 땀이 날 정도의 중강도",
+      "ageTip": "식후 30분~1시간 후 운동하면 혈당 스파이크 억제에 효과적입니다.",
+      "bmi": "6.8 (저체중 (점진적 근력 강화 권장))",
+      "medWarnings": []
+    },
+    "createdAt": "2026-10-30T10:24:18.342Z"
+  },
+  {
+    "id": "rec_1793355391678_xmqvh",
+    "userId": "usr_1793355350449_1fn2",
+    "patientName": "경약인",
+    "gender": "여성",
+    "age": 20,
+    "weight": 45,
+    "conditions": [
+      "고혈압",
+      "당뇨병",
+      "만성 위염/역류성 식도염",
+      "만성신부전/신장질환"
+    ],
+    "medications": [
+      {
+        "id": "levocetirizine",
+        "name": "레보세티리진",
+        "inputName": "레보세티리진",
+        "category": "2세대 항히스타민제",
+        "efficacy": "계절성 및 다년성 알레르기 비염, 재채기, 콧물, 가려움증 완화",
+        "timings": [
+          "bedtime"
+        ],
+        "frequency": "1일 1회",
+        "isAutoScheduled": true,
+        "scheduleReason": "졸음을 유발하므로 활동 시간을 피해 '취침 전' 복용으로 자동 지정되었습니다.",
+        "dosage": "1일 1회 5mg (취침 전 복용 권장)",
+        "storage": "실온(15~30℃) 건조한 곳에 보관",
+        "criticalWarnings": [
+          {
+            "type": "drowsiness",
+            "severity": "danger",
+            "icon": "fa-bed",
+            "badge": "😴 심한 졸림 유발! 운전 및 기계 조작 금지",
+            "title": "복용 후 운전, 자전거, 정밀 기계 조작을 절대 하지 마세요!",
+            "detail": "중추신경을 진정시켜 심한 졸음과 반응 속도 저하를 부릅니다. 이 때문에 반드시 취침 전 복용을 권장합니다."
+          },
+          {
+            "type": "alcohol",
+            "severity": "danger",
+            "icon": "fa-wine-glass",
+            "badge": "🚨 알코올 병용 시 극심한 중추신경 마비",
+            "title": "술과 함께 드시면 실신이나 혼미 상태가 올 수 있습니다.",
+            "detail": "알코올과 상호작용하여 인지 기능이 급격히 저하되므로 절대 음주하지 마세요."
+          }
+        ],
+        "administrationTips": [
+          "졸음을 유발하므로 가급적 잠들기 전(취침 전)에 복용하세요.",
+          "복용 다음 날 아침에도 멍한 기운이 남을 수 있으니 주의하세요."
+        ],
+        "sideEffects": "졸음, 입마름(구갈), 피로감, 두통.",
+        "foodWarnings": [
+          {
+            "food": "술 (알코올)",
+            "severity": "danger",
+            "reason": "알코올과 병용 시 극심한 졸음, 집중력 저하를 초래합니다."
+          }
+        ],
+        "supplementTips": "면역 균형을 위해 아연, 비타민C, 퀘르세틴 영양소를 추천합니다."
+      },
+      {
+        "id": "ibuprofen",
+        "name": "이부프로펜",
+        "inputName": "이부프로펜",
+        "category": "소염진통제 (NSAIDs)",
+        "efficacy": "염증 완화, 관절통, 근육통, 두통, 해열",
+        "timings": [
+          "morning_after",
+          "lunch_after",
+          "evening_after"
+        ],
+        "frequency": "1일 3회",
+        "isAutoScheduled": false,
+        "scheduleReason": "",
+        "dosage": "1회 200~400mg, 1일 3회 (식사 직후)",
+        "storage": "실온(1~30℃) 건조한 곳에 보관",
+        "criticalWarnings": [
+          {
+            "type": "stomach_bleed",
+            "severity": "danger",
+            "icon": "fa-triangle-exclamation",
+            "badge": "🚨 절대 공복 복용 금지 (위출혈 위험)",
+            "title": "반드시 식사 직후 충분한 물과 함께 드세요!",
+            "detail": "공복에 복용 시 위 점막이 손상되어 속쓰림, 위궤양, 위장관 출혈이 발생할 수 있습니다."
+          },
+          {
+            "type": "alcohol",
+            "severity": "danger",
+            "icon": "fa-wine-bottle",
+            "badge": "🚨 복용 중 음주 절대 금지",
+            "title": "술과 함께 먹으면 위벽이 헐어 피를 토할 수 있습니다.",
+            "detail": "소염진통제와 알코올의 병용은 위궤양 및 위장 출혈 위험을 수배 이상 높입니다."
+          }
+        ],
+        "administrationTips": [
+          "위 점막을 자극하므로 공복을 피하고 식사 직후 충분한 물과 함께 드세요.",
+          "탈수가 있거나 신장이 약한 분은 신장 손상 위험이 있으니 주의하세요."
+        ],
+        "sideEffects": "위장 장애, 속쓰림, 신장 기능 저하, 부종.",
+        "foodWarnings": [
+          {
+            "food": "술 (알코올)",
+            "severity": "danger",
+            "reason": "위 점막 손상이 배가되어 위출혈, 위궤양 위험이 급증합니다."
+          }
+        ],
+        "supplementTips": "위장 보호를 위해 양배추 유래 성분(비타민U)이나 유산균 섭취가 도움됩니다."
+      },
+      {
+        "id": "atorvastatin",
+        "name": "아토르바스타틴",
+        "inputName": "아토르바스타틴",
+        "category": "이상지질혈증(고지혈증) 치료제 (스타틴계)",
+        "efficacy": "혈중 LDL 콜레스테롤 및 중성지방 감소, 심혈관 질환 예방",
+        "timings": [
+          "evening_after"
+        ],
+        "frequency": "1일 1회",
+        "isAutoScheduled": true,
+        "scheduleReason": "간에서 콜레스테롤 합성이 활발한 시간대에 맞춰 '저녁 식후'로 자동 지정되었습니다.",
+        "dosage": "1일 1회 10~20mg (저녁 식후)",
+        "storage": "실온(15~25℃) 습기를 피하여 보관",
+        "criticalWarnings": [
+          {
+            "type": "grapefruit",
+            "severity": "danger",
+            "icon": "fa-ban",
+            "badge": "🚨 자몽 및 자몽주스 절대 섭취 금지",
+            "title": "자몽 성분이 약물 농도를 폭증시켜 근육 괴사를 부릅니다!",
+            "detail": "자몽이 간 대사를 방해하여 심각한 근육 손상(횡문근융해증) 및 급성 신부전을 일으킬 수 있습니다."
+          },
+          {
+            "type": "muscle_pain",
+            "severity": "high",
+            "icon": "fa-person-dots-from-line",
+            "badge": "⚠️ 원인 모를 근육통 발생 시 즉시 문의",
+            "title": "종아리나 허벅지 등에 이유 없는 심한 근육통이 생기면 복용을 멈추세요.",
+            "detail": "콜라색/갈색 소변이나 심한 근육통이 나타나면 즉시 병원 진료를 받아야 합니다."
+          }
+        ],
+        "administrationTips": [
+          "간에서 콜레스테롤 합성이 가장 활발한 저녁 식후 복용 시 효과가 가장 뛰어납니다.",
+          "이유 없는 근육통, 근육 경련, 붉은 소변이 나타나면 즉시 진료를 받으세요."
+        ],
+        "sideEffects": "근육통, 소화불량, 간 수치 상승.",
+        "foodWarnings": [
+          {
+            "food": "자몽 및 자몽주스",
+            "severity": "danger",
+            "reason": "체내 스타틴 농도가 3~4배 이상 폭증하여 횡문근융해증을 유발합니다."
+          }
+        ],
+        "supplementTips": "스타틴 복용 시 체내 코엔자임Q10이 고갈되므로 CoQ10 영양제 병용을 권장합니다."
+      }
+    ],
+    "criticalWarnings": [
+      {
+        "type": "drowsiness",
+        "severity": "danger",
+        "icon": "fa-bed",
+        "badge": "😴 심한 졸림 유발! 운전 및 기계 조작 금지",
+        "title": "복용 후 운전, 자전거, 정밀 기계 조작을 절대 하지 마세요!",
+        "detail": "중추신경을 진정시켜 심한 졸음과 반응 속도 저하를 부릅니다. 이 때문에 반드시 취침 전 복용을 권장합니다.",
+        "drugName": "레보세티리진"
+      },
+      {
+        "type": "alcohol",
+        "severity": "danger",
+        "icon": "fa-wine-glass",
+        "badge": "🚨 알코올 병용 시 극심한 중추신경 마비",
+        "title": "술과 함께 드시면 실신이나 혼미 상태가 올 수 있습니다.",
+        "detail": "알코올과 상호작용하여 인지 기능이 급격히 저하되므로 절대 음주하지 마세요.",
+        "drugName": "레보세티리진"
+      },
+      {
+        "type": "stomach_bleed",
+        "severity": "danger",
+        "icon": "fa-triangle-exclamation",
+        "badge": "🚨 절대 공복 복용 금지 (위출혈 위험)",
+        "title": "반드시 식사 직후 충분한 물과 함께 드세요!",
+        "detail": "공복에 복용 시 위 점막이 손상되어 속쓰림, 위궤양, 위장관 출혈이 발생할 수 있습니다.",
+        "drugName": "이부프로펜"
+      },
+      {
+        "type": "alcohol",
+        "severity": "danger",
+        "icon": "fa-wine-bottle",
+        "badge": "🚨 복용 중 음주 절대 금지",
+        "title": "술과 함께 먹으면 위벽이 헐어 피를 토할 수 있습니다.",
+        "detail": "소염진통제와 알코올의 병용은 위궤양 및 위장 출혈 위험을 수배 이상 높입니다.",
+        "drugName": "이부프로펜"
+      },
+      {
+        "type": "grapefruit",
+        "severity": "danger",
+        "icon": "fa-ban",
+        "badge": "🚨 자몽 및 자몽주스 절대 섭취 금지",
+        "title": "자몽 성분이 약물 농도를 폭증시켜 근육 괴사를 부릅니다!",
+        "detail": "자몽이 간 대사를 방해하여 심각한 근육 손상(횡문근융해증) 및 급성 신부전을 일으킬 수 있습니다.",
+        "drugName": "아토르바스타틴"
+      },
+      {
+        "type": "muscle_pain",
+        "severity": "high",
+        "icon": "fa-person-dots-from-line",
+        "badge": "⚠️ 원인 모를 근육통 발생 시 즉시 문의",
+        "title": "종아리나 허벅지 등에 이유 없는 심한 근육통이 생기면 복용을 멈추세요.",
+        "detail": "콜라색/갈색 소변이나 심한 근육통이 나타나면 즉시 병원 진료를 받아야 합니다.",
+        "drugName": "아토르바스타틴"
+      }
+    ],
+    "safetyScore": "안전",
+    "timeline": [
+      {
+        "key": "morning_before",
+        "title": "아침 식전 (식사 30분 전)",
+        "icon": "🌅",
+        "time": "07:30",
+        "items": []
+      },
+      {
+        "key": "morning_after",
+        "title": "아침 식후 (식사 30분 후)",
+        "icon": "🥣",
+        "time": "08:30",
+        "items": [
+          {
+            "id": "ibuprofen",
+            "name": "이부프로펜",
+            "inputName": "이부프로펜",
+            "category": "소염진통제 (NSAIDs)",
+            "efficacy": "염증 완화, 관절통, 근육통, 두통, 해열",
+            "timings": [
+              "morning_after",
+              "lunch_after",
+              "evening_after"
+            ],
+            "frequency": "1일 3회",
+            "isAutoScheduled": false,
+            "scheduleReason": "",
+            "dosage": "1회 200~400mg, 1일 3회 (식사 직후)",
+            "storage": "실온(1~30℃) 건조한 곳에 보관",
+            "criticalWarnings": [
+              {
+                "type": "stomach_bleed",
+                "severity": "danger",
+                "icon": "fa-triangle-exclamation",
+                "badge": "🚨 절대 공복 복용 금지 (위출혈 위험)",
+                "title": "반드시 식사 직후 충분한 물과 함께 드세요!",
+                "detail": "공복에 복용 시 위 점막이 손상되어 속쓰림, 위궤양, 위장관 출혈이 발생할 수 있습니다."
+              },
+              {
+                "type": "alcohol",
+                "severity": "danger",
+                "icon": "fa-wine-bottle",
+                "badge": "🚨 복용 중 음주 절대 금지",
+                "title": "술과 함께 먹으면 위벽이 헐어 피를 토할 수 있습니다.",
+                "detail": "소염진통제와 알코올의 병용은 위궤양 및 위장 출혈 위험을 수배 이상 높입니다."
+              }
+            ],
+            "administrationTips": [
+              "위 점막을 자극하므로 공복을 피하고 식사 직후 충분한 물과 함께 드세요.",
+              "탈수가 있거나 신장이 약한 분은 신장 손상 위험이 있으니 주의하세요."
+            ],
+            "sideEffects": "위장 장애, 속쓰림, 신장 기능 저하, 부종.",
+            "foodWarnings": [
+              {
+                "food": "술 (알코올)",
+                "severity": "danger",
+                "reason": "위 점막 손상이 배가되어 위출혈, 위궤양 위험이 급증합니다."
+              }
+            ],
+            "supplementTips": "위장 보호를 위해 양배추 유래 성분(비타민U)이나 유산균 섭취가 도움됩니다.",
+            "currentSlot": "morning_after"
+          }
+        ]
+      },
+      {
+        "key": "lunch_after",
+        "title": "점심 식후 (식사 30분 후)",
+        "icon": "☀️",
+        "time": "13:00",
+        "items": [
+          {
+            "id": "ibuprofen",
+            "name": "이부프로펜",
+            "inputName": "이부프로펜",
+            "category": "소염진통제 (NSAIDs)",
+            "efficacy": "염증 완화, 관절통, 근육통, 두통, 해열",
+            "timings": [
+              "morning_after",
+              "lunch_after",
+              "evening_after"
+            ],
+            "frequency": "1일 3회",
+            "isAutoScheduled": false,
+            "scheduleReason": "",
+            "dosage": "1회 200~400mg, 1일 3회 (식사 직후)",
+            "storage": "실온(1~30℃) 건조한 곳에 보관",
+            "criticalWarnings": [
+              {
+                "type": "stomach_bleed",
+                "severity": "danger",
+                "icon": "fa-triangle-exclamation",
+                "badge": "🚨 절대 공복 복용 금지 (위출혈 위험)",
+                "title": "반드시 식사 직후 충분한 물과 함께 드세요!",
+                "detail": "공복에 복용 시 위 점막이 손상되어 속쓰림, 위궤양, 위장관 출혈이 발생할 수 있습니다."
+              },
+              {
+                "type": "alcohol",
+                "severity": "danger",
+                "icon": "fa-wine-bottle",
+                "badge": "🚨 복용 중 음주 절대 금지",
+                "title": "술과 함께 먹으면 위벽이 헐어 피를 토할 수 있습니다.",
+                "detail": "소염진통제와 알코올의 병용은 위궤양 및 위장 출혈 위험을 수배 이상 높입니다."
+              }
+            ],
+            "administrationTips": [
+              "위 점막을 자극하므로 공복을 피하고 식사 직후 충분한 물과 함께 드세요.",
+              "탈수가 있거나 신장이 약한 분은 신장 손상 위험이 있으니 주의하세요."
+            ],
+            "sideEffects": "위장 장애, 속쓰림, 신장 기능 저하, 부종.",
+            "foodWarnings": [
+              {
+                "food": "술 (알코올)",
+                "severity": "danger",
+                "reason": "위 점막 손상이 배가되어 위출혈, 위궤양 위험이 급증합니다."
+              }
+            ],
+            "supplementTips": "위장 보호를 위해 양배추 유래 성분(비타민U)이나 유산균 섭취가 도움됩니다.",
+            "currentSlot": "lunch_after"
+          }
+        ]
+      },
+      {
+        "key": "evening_after",
+        "title": "저녁 식후 (식사 30분 후)",
+        "icon": "🌙",
+        "time": "19:00",
+        "items": [
+          {
+            "id": "ibuprofen",
+            "name": "이부프로펜",
+            "inputName": "이부프로펜",
+            "category": "소염진통제 (NSAIDs)",
+            "efficacy": "염증 완화, 관절통, 근육통, 두통, 해열",
+            "timings": [
+              "morning_after",
+              "lunch_after",
+              "evening_after"
+            ],
+            "frequency": "1일 3회",
+            "isAutoScheduled": false,
+            "scheduleReason": "",
+            "dosage": "1회 200~400mg, 1일 3회 (식사 직후)",
+            "storage": "실온(1~30℃) 건조한 곳에 보관",
+            "criticalWarnings": [
+              {
+                "type": "stomach_bleed",
+                "severity": "danger",
+                "icon": "fa-triangle-exclamation",
+                "badge": "🚨 절대 공복 복용 금지 (위출혈 위험)",
+                "title": "반드시 식사 직후 충분한 물과 함께 드세요!",
+                "detail": "공복에 복용 시 위 점막이 손상되어 속쓰림, 위궤양, 위장관 출혈이 발생할 수 있습니다."
+              },
+              {
+                "type": "alcohol",
+                "severity": "danger",
+                "icon": "fa-wine-bottle",
+                "badge": "🚨 복용 중 음주 절대 금지",
+                "title": "술과 함께 먹으면 위벽이 헐어 피를 토할 수 있습니다.",
+                "detail": "소염진통제와 알코올의 병용은 위궤양 및 위장 출혈 위험을 수배 이상 높입니다."
+              }
+            ],
+            "administrationTips": [
+              "위 점막을 자극하므로 공복을 피하고 식사 직후 충분한 물과 함께 드세요.",
+              "탈수가 있거나 신장이 약한 분은 신장 손상 위험이 있으니 주의하세요."
+            ],
+            "sideEffects": "위장 장애, 속쓰림, 신장 기능 저하, 부종.",
+            "foodWarnings": [
+              {
+                "food": "술 (알코올)",
+                "severity": "danger",
+                "reason": "위 점막 손상이 배가되어 위출혈, 위궤양 위험이 급증합니다."
+              }
+            ],
+            "supplementTips": "위장 보호를 위해 양배추 유래 성분(비타민U)이나 유산균 섭취가 도움됩니다.",
+            "currentSlot": "evening_after"
+          },
+          {
+            "id": "atorvastatin",
+            "name": "아토르바스타틴",
+            "inputName": "아토르바스타틴",
+            "category": "이상지질혈증(고지혈증) 치료제 (스타틴계)",
+            "efficacy": "혈중 LDL 콜레스테롤 및 중성지방 감소, 심혈관 질환 예방",
+            "timings": [
+              "evening_after"
+            ],
+            "frequency": "1일 1회",
+            "isAutoScheduled": true,
+            "scheduleReason": "간에서 콜레스테롤 합성이 활발한 시간대에 맞춰 '저녁 식후'로 자동 지정되었습니다.",
+            "dosage": "1일 1회 10~20mg (저녁 식후)",
+            "storage": "실온(15~25℃) 습기를 피하여 보관",
+            "criticalWarnings": [
+              {
+                "type": "grapefruit",
+                "severity": "danger",
+                "icon": "fa-ban",
+                "badge": "🚨 자몽 및 자몽주스 절대 섭취 금지",
+                "title": "자몽 성분이 약물 농도를 폭증시켜 근육 괴사를 부릅니다!",
+                "detail": "자몽이 간 대사를 방해하여 심각한 근육 손상(횡문근융해증) 및 급성 신부전을 일으킬 수 있습니다."
+              },
+              {
+                "type": "muscle_pain",
+                "severity": "high",
+                "icon": "fa-person-dots-from-line",
+                "badge": "⚠️ 원인 모를 근육통 발생 시 즉시 문의",
+                "title": "종아리나 허벅지 등에 이유 없는 심한 근육통이 생기면 복용을 멈추세요.",
+                "detail": "콜라색/갈색 소변이나 심한 근육통이 나타나면 즉시 병원 진료를 받아야 합니다."
+              }
+            ],
+            "administrationTips": [
+              "간에서 콜레스테롤 합성이 가장 활발한 저녁 식후 복용 시 효과가 가장 뛰어납니다.",
+              "이유 없는 근육통, 근육 경련, 붉은 소변이 나타나면 즉시 진료를 받으세요."
+            ],
+            "sideEffects": "근육통, 소화불량, 간 수치 상승.",
+            "foodWarnings": [
+              {
+                "food": "자몽 및 자몽주스",
+                "severity": "danger",
+                "reason": "체내 스타틴 농도가 3~4배 이상 폭증하여 횡문근융해증을 유발합니다."
+              }
+            ],
+            "supplementTips": "스타틴 복용 시 체내 코엔자임Q10이 고갈되므로 CoQ10 영양제 병용을 권장합니다.",
+            "currentSlot": "evening_after"
+          }
+        ]
+      },
+      {
+        "key": "bedtime",
+        "title": "취침 전 (잠들기 30분~1시간 전)",
+        "icon": "🛌",
+        "time": "22:30",
+        "items": [
+          {
+            "id": "levocetirizine",
+            "name": "레보세티리진",
+            "inputName": "레보세티리진",
+            "category": "2세대 항히스타민제",
+            "efficacy": "계절성 및 다년성 알레르기 비염, 재채기, 콧물, 가려움증 완화",
+            "timings": [
+              "bedtime"
+            ],
+            "frequency": "1일 1회",
+            "isAutoScheduled": true,
+            "scheduleReason": "졸음을 유발하므로 활동 시간을 피해 '취침 전' 복용으로 자동 지정되었습니다.",
+            "dosage": "1일 1회 5mg (취침 전 복용 권장)",
+            "storage": "실온(15~30℃) 건조한 곳에 보관",
+            "criticalWarnings": [
+              {
+                "type": "drowsiness",
+                "severity": "danger",
+                "icon": "fa-bed",
+                "badge": "😴 심한 졸림 유발! 운전 및 기계 조작 금지",
+                "title": "복용 후 운전, 자전거, 정밀 기계 조작을 절대 하지 마세요!",
+                "detail": "중추신경을 진정시켜 심한 졸음과 반응 속도 저하를 부릅니다. 이 때문에 반드시 취침 전 복용을 권장합니다."
+              },
+              {
+                "type": "alcohol",
+                "severity": "danger",
+                "icon": "fa-wine-glass",
+                "badge": "🚨 알코올 병용 시 극심한 중추신경 마비",
+                "title": "술과 함께 드시면 실신이나 혼미 상태가 올 수 있습니다.",
+                "detail": "알코올과 상호작용하여 인지 기능이 급격히 저하되므로 절대 음주하지 마세요."
+              }
+            ],
+            "administrationTips": [
+              "졸음을 유발하므로 가급적 잠들기 전(취침 전)에 복용하세요.",
+              "복용 다음 날 아침에도 멍한 기운이 남을 수 있으니 주의하세요."
+            ],
+            "sideEffects": "졸음, 입마름(구갈), 피로감, 두통.",
+            "foodWarnings": [
+              {
+                "food": "술 (알코올)",
+                "severity": "danger",
+                "reason": "알코올과 병용 시 극심한 졸음, 집중력 저하를 초래합니다."
+              }
+            ],
+            "supplementTips": "면역 균형을 위해 아연, 비타민C, 퀘르세틴 영양소를 추천합니다.",
+            "currentSlot": "bedtime"
+          }
+        ]
+      }
+    ],
+    "ddiWarnings": [],
+    "foodWarnings": [
+      {
+        "food": "술 (알코올)",
+        "severity": "danger",
+        "reason": "알코올과 병용 시 극심한 졸음, 집중력 저하를 초래합니다.",
+        "relatedDrugs": [
+          "레보세티리진",
+          "이부프로펜"
+        ]
+      },
+      {
+        "food": "자몽 및 자몽주스",
+        "severity": "danger",
+        "reason": "체내 스타틴 농도가 3~4배 이상 폭증하여 횡문근융해증을 유발합니다.",
+        "relatedDrugs": [
+          "아토르바스타틴"
+        ]
+      }
+    ],
+    "supplements": [
+      {
+        "drug": "레보세티리진",
+        "tip": "면역 균형을 위해 아연, 비타민C, 퀘르세틴 영양소를 추천합니다."
+      },
+      {
+        "drug": "이부프로펜",
+        "tip": "위장 보호를 위해 양배추 유래 성분(비타민U)이나 유산균 섭취가 도움됩니다."
+      },
+      {
+        "drug": "아토르바스타틴",
+        "tip": "스타틴 복용 시 체내 코엔자임Q10이 고갈되므로 CoQ10 영양제 병용을 권장합니다."
+      }
+    ],
+    "dietPlans": [
+      {
+        "condition": "고혈압",
+        "recommend": [
+          "DASH 식단(잡곡밥, 저지방 유제품)",
+          "칼륨 풍부 채소(브로콜리, 토마토)",
+          "등푸른 생선(고등어)",
+          "견과류 한 줌"
+        ],
+        "avoid": [
+          "짠 찌개/국물(나트륨 과다)",
+          "젓갈, 가공육(소시지, 햄)",
+          "라면, 인스턴트",
+          "과도한 알코올"
+        ],
+        "waterIntake": "하루 1.5~2L 미온수 충분 섭취",
+        "keyTip": "음식 조리 시 소금 대신 레몬즙, 식초, 양파가루 등으로 풍미를 돋우세요."
+      },
+      {
+        "condition": "당뇨병",
+        "recommend": [
+          "복합 탄수화물(현미, 귀리)",
+          "해조류(미역, 다시마)와 나물",
+          "단백질(닭가슴살, 두부, 계란)",
+          "채소-단백질-탄수화물 순서 식사"
+        ],
+        "avoid": [
+          "단순당(설탕, 액상과당, 믹스커피)",
+          "흰쌀밥, 떡, 빵(고GI 식품)",
+          "과일 통조림",
+          "야식"
+        ],
+        "waterIntake": "하루 2L 권장 (탈수 방지)",
+        "keyTip": "식사는 거르지 않고 정해진 시간에 드셔야 저혈당을 예방할 수 있습니다."
+      },
+      {
+        "condition": "만성 위염/역류성 식도염",
+        "recommend": [
+          "양배추, 브로콜리(비타민 U)",
+          "감자, 마(위점막 보호)",
+          "흰살생선",
+          "따뜻한 보리차"
+        ],
+        "avoid": [
+          "카페인(커피, 에너지음료)",
+          "맵고 자극적인 양념",
+          "밀가루, 야식 후 바로 눕기"
+        ],
+        "waterIntake": "식사 도중 많은 물 섭취를 피하고 식간에 마시기",
+        "keyTip": "식후 최소 2시간 동안은 눕지 마세요."
+      }
+    ],
+    "exercisePlan": {
+      "ageGroup": "청장년층 (20~40대)",
+      "recommend": [
+        "중강도 유산소 30분 (조깅, 수영, 자전거) 주 3~5회",
+        "주 2회 근력 운동"
+      ],
+      "intensity": "약간 숨이 차고 땀이 날 정도의 중강도",
+      "ageTip": "식후 30분~1시간 후 운동하면 혈당 스파이크 억제에 효과적입니다.",
+      "bmi": "17.6 (저체중 (점진적 근력 강화 권장))",
+      "medWarnings": []
+    },
+    "createdAt": "2026-10-30T10:16:31.677Z"
+  },
+  {
+    "id": "rec_1793355139126_qk5pm",
+    "userId": "usr_1793355103147_tgu5",
+    "patientName": "경약인",
+    "gender": "여성",
+    "age": 20,
+    "weight": 50,
+    "conditions": [
+      "당뇨병",
+      "고지혈증",
+      "만성 위염/역류성 식도염"
+    ],
+    "medications": [
+      {
+        "id": "metformin",
+        "name": "메트포르민",
+        "inputName": "메트포르민",
+        "category": "경구용 당뇨병 치료제 (비구아니드계)",
+        "efficacy": "혈당 조절(인슐린 감수성 개선), 제2형 당뇨병 치료 1차 선택약",
+        "timings": [
+          "morning_after",
+          "evening_after"
+        ],
+        "frequency": "1일 2회",
+        "isAutoScheduled": true,
+        "scheduleReason": "가장 안정적인 약물 흡수 리듬을 위해 추천 시간대로 자동 지정되었습니다.",
+        "dosage": "1회 500mg~1000mg, 1일 2회 (아침/저녁 식사 직후)",
+        "storage": "실온(15~25℃) 건조한 곳에 보관",
+        "criticalWarnings": [
+          {
+            "type": "alcohol",
+            "severity": "danger",
+            "icon": "fa-wine-bottle",
+            "badge": "🚨 음주 절대 금기 (치명적 부작용)",
+            "title": "술은 한 모금도 안 됩니다! 젖산산증 쇼크 위험!",
+            "detail": "알코올과 메트포르민이 결합하면 사망 위험이 있는 치명적인 '젖산산증(Lactic Acidosis)'이 발생할 수 있습니다. 복용 중 절대 금주하세요."
+          },
+          {
+            "type": "stomach",
+            "severity": "medium",
+            "icon": "fa-bowl-food",
+            "badge": "⚠️ 반드시 식사 중 또는 식사 직후 복용",
+            "title": "공복에 드시면 심한 속쓰림과 메스꺼움, 설사가 발생합니다.",
+            "detail": "위장 장애를 줄이기 위해 식사 중간이나 식사 마지막 숟가락과 함께 드시는 것이 가장 편안합니다."
+          }
+        ],
+        "administrationTips": [
+          "위장장애(메스꺼움, 설사)를 줄이기 위해 반드시 식사 중 또는 식사 직후 복용하세요.",
+          "서방정(XR, 서방형)은 쪼개거나 씹지 말고 물과 함께 통째로 삼키세요.",
+          "조영제 검사(CT/MRI) 전후 48시간은 복용을 일시 중단해야 하므로 병원에 꼭 알리세요."
+        ],
+        "sideEffects": "소화불량, 금속성 맛, 복부 팽만, 설사.",
+        "foodWarnings": [
+          {
+            "food": "술 (알코올) 및 과음",
+            "severity": "danger",
+            "reason": "알코올 섭취 시 치명적인 젖산산증 발생 위험이 급격히 증가하므로 반드시 금주해야 합니다."
+          }
+        ],
+        "supplementTips": "장기 복용 시 비타민 B12 흡수가 저해될 수 있으므로 비타민 B군 영양제 섭취를 추천합니다."
+      },
+      {
+        "id": "levocetirizine",
+        "name": "레보세티리진",
+        "inputName": "레보세티리진",
+        "category": "2세대 항히스타민제",
+        "efficacy": "계절성 및 다년성 알레르기 비염, 재채기, 콧물, 가려움증 완화",
+        "timings": [
+          "bedtime"
+        ],
+        "frequency": "1일 1회",
+        "isAutoScheduled": true,
+        "scheduleReason": "졸음을 유발하므로 활동 시간을 피해 '취침 전' 복용으로 자동 지정되었습니다.",
+        "dosage": "1일 1회 5mg (취침 전 복용 권장)",
+        "storage": "실온(15~30℃) 건조한 곳에 보관",
+        "criticalWarnings": [
+          {
+            "type": "drowsiness",
+            "severity": "danger",
+            "icon": "fa-bed",
+            "badge": "😴 심한 졸림 유발! 운전 및 기계 조작 금지",
+            "title": "복용 후 운전, 자전거, 정밀 기계 조작을 절대 하지 마세요!",
+            "detail": "중추신경을 진정시켜 심한 졸음과 반응 속도 저하를 부릅니다. 이 때문에 반드시 취침 전 복용을 권장합니다."
+          },
+          {
+            "type": "alcohol",
+            "severity": "danger",
+            "icon": "fa-wine-glass",
+            "badge": "🚨 알코올 병용 시 극심한 중추신경 마비",
+            "title": "술과 함께 드시면 실신이나 혼미 상태가 올 수 있습니다.",
+            "detail": "알코올과 상호작용하여 인지 기능이 급격히 저하되므로 절대 음주하지 마세요."
+          }
+        ],
+        "administrationTips": [
+          "졸음을 유발하므로 가급적 잠들기 전(취침 전)에 복용하세요.",
+          "복용 다음 날 아침에도 멍한 기운이 남을 수 있으니 주의하세요."
+        ],
+        "sideEffects": "졸음, 입마름(구갈), 피로감, 두통.",
+        "foodWarnings": [
+          {
+            "food": "술 (알코올)",
+            "severity": "danger",
+            "reason": "알코올과 병용 시 극심한 졸음, 집중력 저하를 초래합니다."
+          }
+        ],
+        "supplementTips": "면역 균형을 위해 아연, 비타민C, 퀘르세틴 영양소를 추천합니다."
+      },
+      {
+        "id": "ibuprofen",
+        "name": "이부프로펜",
+        "inputName": "이부프로펜",
+        "category": "소염진통제 (NSAIDs)",
+        "efficacy": "염증 완화, 관절통, 근육통, 두통, 해열",
+        "timings": [
+          "morning_after",
+          "evening_after"
+        ],
+        "frequency": "1일 2회",
+        "isAutoScheduled": false,
+        "scheduleReason": "",
+        "dosage": "1회 200~400mg, 1일 3회 (식사 직후)",
+        "storage": "실온(1~30℃) 건조한 곳에 보관",
+        "criticalWarnings": [
+          {
+            "type": "stomach_bleed",
+            "severity": "danger",
+            "icon": "fa-triangle-exclamation",
+            "badge": "🚨 절대 공복 복용 금지 (위출혈 위험)",
+            "title": "반드시 식사 직후 충분한 물과 함께 드세요!",
+            "detail": "공복에 복용 시 위 점막이 손상되어 속쓰림, 위궤양, 위장관 출혈이 발생할 수 있습니다."
+          },
+          {
+            "type": "alcohol",
+            "severity": "danger",
+            "icon": "fa-wine-bottle",
+            "badge": "🚨 복용 중 음주 절대 금지",
+            "title": "술과 함께 먹으면 위벽이 헐어 피를 토할 수 있습니다.",
+            "detail": "소염진통제와 알코올의 병용은 위궤양 및 위장 출혈 위험을 수배 이상 높입니다."
+          }
+        ],
+        "administrationTips": [
+          "위 점막을 자극하므로 공복을 피하고 식사 직후 충분한 물과 함께 드세요.",
+          "탈수가 있거나 신장이 약한 분은 신장 손상 위험이 있으니 주의하세요."
+        ],
+        "sideEffects": "위장 장애, 속쓰림, 신장 기능 저하, 부종.",
+        "foodWarnings": [
+          {
+            "food": "술 (알코올)",
+            "severity": "danger",
+            "reason": "위 점막 손상이 배가되어 위출혈, 위궤양 위험이 급증합니다."
+          }
+        ],
+        "supplementTips": "위장 보호를 위해 양배추 유래 성분(비타민U)이나 유산균 섭취가 도움됩니다."
+      }
+    ],
+    "criticalWarnings": [
+      {
+        "type": "alcohol",
+        "severity": "danger",
+        "icon": "fa-wine-bottle",
+        "badge": "🚨 음주 절대 금기 (치명적 부작용)",
+        "title": "술은 한 모금도 안 됩니다! 젖산산증 쇼크 위험!",
+        "detail": "알코올과 메트포르민이 결합하면 사망 위험이 있는 치명적인 '젖산산증(Lactic Acidosis)'이 발생할 수 있습니다. 복용 중 절대 금주하세요.",
+        "drugName": "메트포르민"
+      },
+      {
+        "type": "drowsiness",
+        "severity": "danger",
+        "icon": "fa-bed",
+        "badge": "😴 심한 졸림 유발! 운전 및 기계 조작 금지",
+        "title": "복용 후 운전, 자전거, 정밀 기계 조작을 절대 하지 마세요!",
+        "detail": "중추신경을 진정시켜 심한 졸음과 반응 속도 저하를 부릅니다. 이 때문에 반드시 취침 전 복용을 권장합니다.",
+        "drugName": "레보세티리진"
+      },
+      {
+        "type": "alcohol",
+        "severity": "danger",
+        "icon": "fa-wine-glass",
+        "badge": "🚨 알코올 병용 시 극심한 중추신경 마비",
+        "title": "술과 함께 드시면 실신이나 혼미 상태가 올 수 있습니다.",
+        "detail": "알코올과 상호작용하여 인지 기능이 급격히 저하되므로 절대 음주하지 마세요.",
+        "drugName": "레보세티리진"
+      },
+      {
+        "type": "stomach_bleed",
+        "severity": "danger",
+        "icon": "fa-triangle-exclamation",
+        "badge": "🚨 절대 공복 복용 금지 (위출혈 위험)",
+        "title": "반드시 식사 직후 충분한 물과 함께 드세요!",
+        "detail": "공복에 복용 시 위 점막이 손상되어 속쓰림, 위궤양, 위장관 출혈이 발생할 수 있습니다.",
+        "drugName": "이부프로펜"
+      },
+      {
+        "type": "alcohol",
+        "severity": "danger",
+        "icon": "fa-wine-bottle",
+        "badge": "🚨 복용 중 음주 절대 금지",
+        "title": "술과 함께 먹으면 위벽이 헐어 피를 토할 수 있습니다.",
+        "detail": "소염진통제와 알코올의 병용은 위궤양 및 위장 출혈 위험을 수배 이상 높입니다.",
+        "drugName": "이부프로펜"
+      },
+      {
+        "type": "stomach",
+        "severity": "medium",
+        "icon": "fa-bowl-food",
+        "badge": "⚠️ 반드시 식사 중 또는 식사 직후 복용",
+        "title": "공복에 드시면 심한 속쓰림과 메스꺼움, 설사가 발생합니다.",
+        "detail": "위장 장애를 줄이기 위해 식사 중간이나 식사 마지막 숟가락과 함께 드시는 것이 가장 편안합니다.",
+        "drugName": "메트포르민"
+      }
+    ],
+    "safetyScore": "안전",
+    "timeline": [
+      {
+        "key": "morning_before",
+        "title": "아침 식전 (식사 30분 전)",
+        "icon": "🌅",
+        "time": "07:30",
+        "items": []
+      },
+      {
+        "key": "morning_after",
+        "title": "아침 식후 (식사 30분 후)",
+        "icon": "🥣",
+        "time": "08:30",
+        "items": [
+          {
+            "id": "metformin",
+            "name": "메트포르민",
+            "inputName": "메트포르민",
+            "category": "경구용 당뇨병 치료제 (비구아니드계)",
+            "efficacy": "혈당 조절(인슐린 감수성 개선), 제2형 당뇨병 치료 1차 선택약",
+            "timings": [
+              "morning_after",
+              "evening_after"
+            ],
+            "frequency": "1일 2회",
+            "isAutoScheduled": true,
+            "scheduleReason": "가장 안정적인 약물 흡수 리듬을 위해 추천 시간대로 자동 지정되었습니다.",
+            "dosage": "1회 500mg~1000mg, 1일 2회 (아침/저녁 식사 직후)",
+            "storage": "실온(15~25℃) 건조한 곳에 보관",
+            "criticalWarnings": [
+              {
+                "type": "alcohol",
+                "severity": "danger",
+                "icon": "fa-wine-bottle",
+                "badge": "🚨 음주 절대 금기 (치명적 부작용)",
+                "title": "술은 한 모금도 안 됩니다! 젖산산증 쇼크 위험!",
+                "detail": "알코올과 메트포르민이 결합하면 사망 위험이 있는 치명적인 '젖산산증(Lactic Acidosis)'이 발생할 수 있습니다. 복용 중 절대 금주하세요."
+              },
+              {
+                "type": "stomach",
+                "severity": "medium",
+                "icon": "fa-bowl-food",
+                "badge": "⚠️ 반드시 식사 중 또는 식사 직후 복용",
+                "title": "공복에 드시면 심한 속쓰림과 메스꺼움, 설사가 발생합니다.",
+                "detail": "위장 장애를 줄이기 위해 식사 중간이나 식사 마지막 숟가락과 함께 드시는 것이 가장 편안합니다."
+              }
+            ],
+            "administrationTips": [
+              "위장장애(메스꺼움, 설사)를 줄이기 위해 반드시 식사 중 또는 식사 직후 복용하세요.",
+              "서방정(XR, 서방형)은 쪼개거나 씹지 말고 물과 함께 통째로 삼키세요.",
+              "조영제 검사(CT/MRI) 전후 48시간은 복용을 일시 중단해야 하므로 병원에 꼭 알리세요."
+            ],
+            "sideEffects": "소화불량, 금속성 맛, 복부 팽만, 설사.",
+            "foodWarnings": [
+              {
+                "food": "술 (알코올) 및 과음",
+                "severity": "danger",
+                "reason": "알코올 섭취 시 치명적인 젖산산증 발생 위험이 급격히 증가하므로 반드시 금주해야 합니다."
+              }
+            ],
+            "supplementTips": "장기 복용 시 비타민 B12 흡수가 저해될 수 있으므로 비타민 B군 영양제 섭취를 추천합니다.",
+            "currentSlot": "morning_after"
+          },
+          {
+            "id": "ibuprofen",
+            "name": "이부프로펜",
+            "inputName": "이부프로펜",
+            "category": "소염진통제 (NSAIDs)",
+            "efficacy": "염증 완화, 관절통, 근육통, 두통, 해열",
+            "timings": [
+              "morning_after",
+              "evening_after"
+            ],
+            "frequency": "1일 2회",
+            "isAutoScheduled": false,
+            "scheduleReason": "",
+            "dosage": "1회 200~400mg, 1일 3회 (식사 직후)",
+            "storage": "실온(1~30℃) 건조한 곳에 보관",
+            "criticalWarnings": [
+              {
+                "type": "stomach_bleed",
+                "severity": "danger",
+                "icon": "fa-triangle-exclamation",
+                "badge": "🚨 절대 공복 복용 금지 (위출혈 위험)",
+                "title": "반드시 식사 직후 충분한 물과 함께 드세요!",
+                "detail": "공복에 복용 시 위 점막이 손상되어 속쓰림, 위궤양, 위장관 출혈이 발생할 수 있습니다."
+              },
+              {
+                "type": "alcohol",
+                "severity": "danger",
+                "icon": "fa-wine-bottle",
+                "badge": "🚨 복용 중 음주 절대 금지",
+                "title": "술과 함께 먹으면 위벽이 헐어 피를 토할 수 있습니다.",
+                "detail": "소염진통제와 알코올의 병용은 위궤양 및 위장 출혈 위험을 수배 이상 높입니다."
+              }
+            ],
+            "administrationTips": [
+              "위 점막을 자극하므로 공복을 피하고 식사 직후 충분한 물과 함께 드세요.",
+              "탈수가 있거나 신장이 약한 분은 신장 손상 위험이 있으니 주의하세요."
+            ],
+            "sideEffects": "위장 장애, 속쓰림, 신장 기능 저하, 부종.",
+            "foodWarnings": [
+              {
+                "food": "술 (알코올)",
+                "severity": "danger",
+                "reason": "위 점막 손상이 배가되어 위출혈, 위궤양 위험이 급증합니다."
+              }
+            ],
+            "supplementTips": "위장 보호를 위해 양배추 유래 성분(비타민U)이나 유산균 섭취가 도움됩니다.",
+            "currentSlot": "morning_after"
+          }
+        ]
+      },
+      {
+        "key": "lunch_after",
+        "title": "점심 식후 (식사 30분 후)",
+        "icon": "☀️",
+        "time": "13:00",
+        "items": []
+      },
+      {
+        "key": "evening_after",
+        "title": "저녁 식후 (식사 30분 후)",
+        "icon": "🌙",
+        "time": "19:00",
+        "items": [
+          {
+            "id": "metformin",
+            "name": "메트포르민",
+            "inputName": "메트포르민",
+            "category": "경구용 당뇨병 치료제 (비구아니드계)",
+            "efficacy": "혈당 조절(인슐린 감수성 개선), 제2형 당뇨병 치료 1차 선택약",
+            "timings": [
+              "morning_after",
+              "evening_after"
+            ],
+            "frequency": "1일 2회",
+            "isAutoScheduled": true,
+            "scheduleReason": "가장 안정적인 약물 흡수 리듬을 위해 추천 시간대로 자동 지정되었습니다.",
+            "dosage": "1회 500mg~1000mg, 1일 2회 (아침/저녁 식사 직후)",
+            "storage": "실온(15~25℃) 건조한 곳에 보관",
+            "criticalWarnings": [
+              {
+                "type": "alcohol",
+                "severity": "danger",
+                "icon": "fa-wine-bottle",
+                "badge": "🚨 음주 절대 금기 (치명적 부작용)",
+                "title": "술은 한 모금도 안 됩니다! 젖산산증 쇼크 위험!",
+                "detail": "알코올과 메트포르민이 결합하면 사망 위험이 있는 치명적인 '젖산산증(Lactic Acidosis)'이 발생할 수 있습니다. 복용 중 절대 금주하세요."
+              },
+              {
+                "type": "stomach",
+                "severity": "medium",
+                "icon": "fa-bowl-food",
+                "badge": "⚠️ 반드시 식사 중 또는 식사 직후 복용",
+                "title": "공복에 드시면 심한 속쓰림과 메스꺼움, 설사가 발생합니다.",
+                "detail": "위장 장애를 줄이기 위해 식사 중간이나 식사 마지막 숟가락과 함께 드시는 것이 가장 편안합니다."
+              }
+            ],
+            "administrationTips": [
+              "위장장애(메스꺼움, 설사)를 줄이기 위해 반드시 식사 중 또는 식사 직후 복용하세요.",
+              "서방정(XR, 서방형)은 쪼개거나 씹지 말고 물과 함께 통째로 삼키세요.",
+              "조영제 검사(CT/MRI) 전후 48시간은 복용을 일시 중단해야 하므로 병원에 꼭 알리세요."
+            ],
+            "sideEffects": "소화불량, 금속성 맛, 복부 팽만, 설사.",
+            "foodWarnings": [
+              {
+                "food": "술 (알코올) 및 과음",
+                "severity": "danger",
+                "reason": "알코올 섭취 시 치명적인 젖산산증 발생 위험이 급격히 증가하므로 반드시 금주해야 합니다."
+              }
+            ],
+            "supplementTips": "장기 복용 시 비타민 B12 흡수가 저해될 수 있으므로 비타민 B군 영양제 섭취를 추천합니다.",
+            "currentSlot": "evening_after"
+          },
+          {
+            "id": "ibuprofen",
+            "name": "이부프로펜",
+            "inputName": "이부프로펜",
+            "category": "소염진통제 (NSAIDs)",
+            "efficacy": "염증 완화, 관절통, 근육통, 두통, 해열",
+            "timings": [
+              "morning_after",
+              "evening_after"
+            ],
+            "frequency": "1일 2회",
+            "isAutoScheduled": false,
+            "scheduleReason": "",
+            "dosage": "1회 200~400mg, 1일 3회 (식사 직후)",
+            "storage": "실온(1~30℃) 건조한 곳에 보관",
+            "criticalWarnings": [
+              {
+                "type": "stomach_bleed",
+                "severity": "danger",
+                "icon": "fa-triangle-exclamation",
+                "badge": "🚨 절대 공복 복용 금지 (위출혈 위험)",
+                "title": "반드시 식사 직후 충분한 물과 함께 드세요!",
+                "detail": "공복에 복용 시 위 점막이 손상되어 속쓰림, 위궤양, 위장관 출혈이 발생할 수 있습니다."
+              },
+              {
+                "type": "alcohol",
+                "severity": "danger",
+                "icon": "fa-wine-bottle",
+                "badge": "🚨 복용 중 음주 절대 금지",
+                "title": "술과 함께 먹으면 위벽이 헐어 피를 토할 수 있습니다.",
+                "detail": "소염진통제와 알코올의 병용은 위궤양 및 위장 출혈 위험을 수배 이상 높입니다."
+              }
+            ],
+            "administrationTips": [
+              "위 점막을 자극하므로 공복을 피하고 식사 직후 충분한 물과 함께 드세요.",
+              "탈수가 있거나 신장이 약한 분은 신장 손상 위험이 있으니 주의하세요."
+            ],
+            "sideEffects": "위장 장애, 속쓰림, 신장 기능 저하, 부종.",
+            "foodWarnings": [
+              {
+                "food": "술 (알코올)",
+                "severity": "danger",
+                "reason": "위 점막 손상이 배가되어 위출혈, 위궤양 위험이 급증합니다."
+              }
+            ],
+            "supplementTips": "위장 보호를 위해 양배추 유래 성분(비타민U)이나 유산균 섭취가 도움됩니다.",
+            "currentSlot": "evening_after"
+          }
+        ]
+      },
+      {
+        "key": "bedtime",
+        "title": "취침 전 (잠들기 30분~1시간 전)",
+        "icon": "🛌",
+        "time": "22:30",
+        "items": [
+          {
+            "id": "levocetirizine",
+            "name": "레보세티리진",
+            "inputName": "레보세티리진",
+            "category": "2세대 항히스타민제",
+            "efficacy": "계절성 및 다년성 알레르기 비염, 재채기, 콧물, 가려움증 완화",
+            "timings": [
+              "bedtime"
+            ],
+            "frequency": "1일 1회",
+            "isAutoScheduled": true,
+            "scheduleReason": "졸음을 유발하므로 활동 시간을 피해 '취침 전' 복용으로 자동 지정되었습니다.",
+            "dosage": "1일 1회 5mg (취침 전 복용 권장)",
+            "storage": "실온(15~30℃) 건조한 곳에 보관",
+            "criticalWarnings": [
+              {
+                "type": "drowsiness",
+                "severity": "danger",
+                "icon": "fa-bed",
+                "badge": "😴 심한 졸림 유발! 운전 및 기계 조작 금지",
+                "title": "복용 후 운전, 자전거, 정밀 기계 조작을 절대 하지 마세요!",
+                "detail": "중추신경을 진정시켜 심한 졸음과 반응 속도 저하를 부릅니다. 이 때문에 반드시 취침 전 복용을 권장합니다."
+              },
+              {
+                "type": "alcohol",
+                "severity": "danger",
+                "icon": "fa-wine-glass",
+                "badge": "🚨 알코올 병용 시 극심한 중추신경 마비",
+                "title": "술과 함께 드시면 실신이나 혼미 상태가 올 수 있습니다.",
+                "detail": "알코올과 상호작용하여 인지 기능이 급격히 저하되므로 절대 음주하지 마세요."
+              }
+            ],
+            "administrationTips": [
+              "졸음을 유발하므로 가급적 잠들기 전(취침 전)에 복용하세요.",
+              "복용 다음 날 아침에도 멍한 기운이 남을 수 있으니 주의하세요."
+            ],
+            "sideEffects": "졸음, 입마름(구갈), 피로감, 두통.",
+            "foodWarnings": [
+              {
+                "food": "술 (알코올)",
+                "severity": "danger",
+                "reason": "알코올과 병용 시 극심한 졸음, 집중력 저하를 초래합니다."
+              }
+            ],
+            "supplementTips": "면역 균형을 위해 아연, 비타민C, 퀘르세틴 영양소를 추천합니다.",
+            "currentSlot": "bedtime"
+          }
+        ]
+      }
+    ],
+    "ddiWarnings": [],
+    "foodWarnings": [
+      {
+        "food": "술 (알코올) 및 과음",
+        "severity": "danger",
+        "reason": "알코올 섭취 시 치명적인 젖산산증 발생 위험이 급격히 증가하므로 반드시 금주해야 합니다.",
+        "relatedDrugs": [
+          "메트포르민"
+        ]
+      },
+      {
+        "food": "술 (알코올)",
+        "severity": "danger",
+        "reason": "알코올과 병용 시 극심한 졸음, 집중력 저하를 초래합니다.",
+        "relatedDrugs": [
+          "레보세티리진",
+          "이부프로펜"
+        ]
+      }
+    ],
+    "supplements": [
+      {
+        "drug": "메트포르민",
+        "tip": "장기 복용 시 비타민 B12 흡수가 저해될 수 있으므로 비타민 B군 영양제 섭취를 추천합니다."
+      },
+      {
+        "drug": "레보세티리진",
+        "tip": "면역 균형을 위해 아연, 비타민C, 퀘르세틴 영양소를 추천합니다."
+      },
+      {
+        "drug": "이부프로펜",
+        "tip": "위장 보호를 위해 양배추 유래 성분(비타민U)이나 유산균 섭취가 도움됩니다."
+      }
+    ],
+    "dietPlans": [
+      {
+        "condition": "당뇨병",
+        "recommend": [
+          "복합 탄수화물(현미, 귀리)",
+          "해조류(미역, 다시마)와 나물",
+          "단백질(닭가슴살, 두부, 계란)",
+          "채소-단백질-탄수화물 순서 식사"
+        ],
+        "avoid": [
+          "단순당(설탕, 액상과당, 믹스커피)",
+          "흰쌀밥, 떡, 빵(고GI 식품)",
+          "과일 통조림",
+          "야식"
+        ],
+        "waterIntake": "하루 2L 권장 (탈수 방지)",
+        "keyTip": "식사는 거르지 않고 정해진 시간에 드셔야 저혈당을 예방할 수 있습니다."
+      },
+      {
+        "condition": "고지혈증",
+        "recommend": [
+          "불포화지방산(올리브유, 들기름)",
+          "수용성 식이섬유(오트밀, 사과)",
+          "콩류 및 두부",
+          "자색 채소(가지, 적양파)"
+        ],
+        "avoid": [
+          "포화/트랜스지방(마가린, 튀김, 삼겹살)",
+          "내장류(곱창, 간)",
+          "자몽(스타틴 복용 시 절대 금기)"
+        ],
+        "waterIntake": "하루 1.5L 이상 섭취",
+        "keyTip": "스타틴 복용 환자는 코엔자임Q10 식품(견과류 등)을 챙기세요."
+      },
+      {
+        "condition": "만성 위염/역류성 식도염",
+        "recommend": [
+          "양배추, 브로콜리(비타민 U)",
+          "감자, 마(위점막 보호)",
+          "흰살생선",
+          "따뜻한 보리차"
+        ],
+        "avoid": [
+          "카페인(커피, 에너지음료)",
+          "맵고 자극적인 양념",
+          "밀가루, 야식 후 바로 눕기"
+        ],
+        "waterIntake": "식사 도중 많은 물 섭취를 피하고 식간에 마시기",
+        "keyTip": "식후 최소 2시간 동안은 눕지 마세요."
+      }
+    ],
+    "exercisePlan": {
+      "ageGroup": "청장년층 (20~40대)",
+      "recommend": [
+        "중강도 유산소 30분 (조깅, 수영, 자전거) 주 3~5회",
+        "주 2회 근력 운동"
+      ],
+      "intensity": "약간 숨이 차고 땀이 날 정도의 중강도",
+      "ageTip": "식후 30분~1시간 후 운동하면 혈당 스파이크 억제에 효과적입니다.",
+      "bmi": "19.5 (표준 체중)",
+      "medWarnings": []
+    },
+    "createdAt": "2026-10-30T10:12:19.125Z"
+  },
+  {
+    "id": "rec_1793354947210_0g1hs",
+    "userId": "usr_1793326773926_ulav",
+    "patientName": "박정민",
+    "gender": "여성",
+    "age": 19,
+    "weight": 47,
+    "conditions": [
+      "만성 위염/역류성 식도염",
+      "당뇨병",
+      "고지혈증"
+    ],
+    "medications": [
+      {
+        "id": "ibuprofen",
+        "name": "이부프로펜",
+        "inputName": "이부프로펜",
+        "category": "소염진통제 (NSAIDs)",
+        "efficacy": "염증 완화, 관절통, 근육통, 두통, 해열",
+        "timings": [
+          "morning_after",
+          "evening_after"
+        ],
+        "frequency": "1일 2회",
+        "isAutoScheduled": false,
+        "scheduleReason": "",
+        "dosage": "1회 200~400mg, 1일 3회 (식사 직후)",
+        "storage": "실온(1~30℃) 건조한 곳에 보관",
+        "criticalWarnings": [
+          {
+            "type": "stomach_bleed",
+            "severity": "danger",
+            "icon": "fa-triangle-exclamation",
+            "badge": "🚨 절대 공복 복용 금지 (위출혈 위험)",
+            "title": "반드시 식사 직후 충분한 물과 함께 드세요!",
+            "detail": "공복에 복용 시 위 점막이 손상되어 속쓰림, 위궤양, 위장관 출혈이 발생할 수 있습니다."
+          },
+          {
+            "type": "alcohol",
+            "severity": "danger",
+            "icon": "fa-wine-bottle",
+            "badge": "🚨 복용 중 음주 절대 금지",
+            "title": "술과 함께 먹으면 위벽이 헐어 피를 토할 수 있습니다.",
+            "detail": "소염진통제와 알코올의 병용은 위궤양 및 위장 출혈 위험을 수배 이상 높입니다."
+          }
+        ],
+        "administrationTips": [
+          "위 점막을 자극하므로 공복을 피하고 식사 직후 충분한 물과 함께 드세요.",
+          "탈수가 있거나 신장이 약한 분은 신장 손상 위험이 있으니 주의하세요."
+        ],
+        "sideEffects": "위장 장애, 속쓰림, 신장 기능 저하, 부종.",
+        "foodWarnings": [
+          {
+            "food": "술 (알코올)",
+            "severity": "danger",
+            "reason": "위 점막 손상이 배가되어 위출혈, 위궤양 위험이 급증합니다."
+          }
+        ],
+        "supplementTips": "위장 보호를 위해 양배추 유래 성분(비타민U)이나 유산균 섭취가 도움됩니다."
+      },
+      {
+        "id": "amlodipine",
+        "name": "암로디핀",
+        "inputName": "암로디핀",
+        "category": "혈압강하제 (칼슘채널차단제)",
+        "efficacy": "고혈압 치료, 관상동맥 질환 및 협심증 증상 완화",
+        "timings": [
+          "morning_after"
+        ],
+        "frequency": "1일 1회",
+        "isAutoScheduled": true,
+        "scheduleReason": "가장 안정적인 약물 흡수 리듬을 위해 추천 시간대로 자동 지정되었습니다.",
+        "dosage": "1일 1회 5mg (증상에 따라 최대 10mg)",
+        "storage": "실온(1~30℃) 건조한 곳, 차광 기밀용기 보관",
+        "criticalWarnings": [
+          {
+            "type": "dizziness",
+            "severity": "high",
+            "icon": "fa-person-falling",
+            "badge": "⚠️ 기립성 저혈압 및 어지러움 주의",
+            "title": "앉거나 누웠다 일어날 때 천천히 일어나세요!",
+            "detail": "혈관 확장 작용으로 뇌혈류가 일시적으로 감소해 어지럼증과 낙상 위험이 있습니다. 특히 복용 초기에는 급격한 자세 변경을 피하세요."
+          }
+        ],
+        "administrationTips": [
+          "매일 일정한 시간(주로 아침)에 복용하는 것이 혈압 조절에 가장 좋습니다.",
+          "복용 초기 어지러움이 생길 수 있으니 천천히 일어나세요.",
+          "임의로 복용을 중단하면 혈압이 급격히 상승할 수 있으므로 의사 상담 없이 중단하지 마세요."
+        ],
+        "sideEffects": "발목이나 하지 부종, 두통, 안면홍조, 어지러움.",
+        "foodWarnings": [
+          {
+            "food": "자몽 및 자몽주스",
+            "severity": "danger",
+            "reason": "자몽 성분이 약물 분해 효소를 억제하여 체내 약물 농도를 급격히 높여 과도한 혈압 저하와 두통, 어지러움을 유발할 수 있습니다."
+          },
+          {
+            "food": "술 (알코올)",
+            "severity": "warning",
+            "reason": "혈관 확장 작용이 겹쳐 급격한 저혈압 및 실신 위험이 증가합니다."
+          }
+        ],
+        "supplementTips": "마그네슘과 비타민D는 혈관 건강에 도움이 되나, 고용량 칼슘제는 약효에 영향을 줄 수 있으므로 2시간 이상 간격을 두고 복용하세요."
+      },
+      {
+        "id": "metformin",
+        "name": "메트포르민",
+        "inputName": "메트포르민",
+        "category": "경구용 당뇨병 치료제 (비구아니드계)",
+        "efficacy": "혈당 조절(인슐린 감수성 개선), 제2형 당뇨병 치료 1차 선택약",
+        "timings": [
+          "morning_after",
+          "lunch_after",
+          "evening_after"
+        ],
+        "frequency": "1일 3회",
+        "isAutoScheduled": false,
+        "scheduleReason": "",
+        "dosage": "1회 500mg~1000mg, 1일 2회 (아침/저녁 식사 직후)",
+        "storage": "실온(15~25℃) 건조한 곳에 보관",
+        "criticalWarnings": [
+          {
+            "type": "alcohol",
+            "severity": "danger",
+            "icon": "fa-wine-bottle",
+            "badge": "🚨 음주 절대 금기 (치명적 부작용)",
+            "title": "술은 한 모금도 안 됩니다! 젖산산증 쇼크 위험!",
+            "detail": "알코올과 메트포르민이 결합하면 사망 위험이 있는 치명적인 '젖산산증(Lactic Acidosis)'이 발생할 수 있습니다. 복용 중 절대 금주하세요."
+          },
+          {
+            "type": "stomach",
+            "severity": "medium",
+            "icon": "fa-bowl-food",
+            "badge": "⚠️ 반드시 식사 중 또는 식사 직후 복용",
+            "title": "공복에 드시면 심한 속쓰림과 메스꺼움, 설사가 발생합니다.",
+            "detail": "위장 장애를 줄이기 위해 식사 중간이나 식사 마지막 숟가락과 함께 드시는 것이 가장 편안합니다."
+          }
+        ],
+        "administrationTips": [
+          "위장장애(메스꺼움, 설사)를 줄이기 위해 반드시 식사 중 또는 식사 직후 복용하세요.",
+          "서방정(XR, 서방형)은 쪼개거나 씹지 말고 물과 함께 통째로 삼키세요.",
+          "조영제 검사(CT/MRI) 전후 48시간은 복용을 일시 중단해야 하므로 병원에 꼭 알리세요."
+        ],
+        "sideEffects": "소화불량, 금속성 맛, 복부 팽만, 설사.",
+        "foodWarnings": [
+          {
+            "food": "술 (알코올) 및 과음",
+            "severity": "danger",
+            "reason": "알코올 섭취 시 치명적인 젖산산증 발생 위험이 급격히 증가하므로 반드시 금주해야 합니다."
+          }
+        ],
+        "supplementTips": "장기 복용 시 비타민 B12 흡수가 저해될 수 있으므로 비타민 B군 영양제 섭취를 추천합니다."
+      }
+    ],
+    "criticalWarnings": [
+      {
+        "type": "stomach_bleed",
+        "severity": "danger",
+        "icon": "fa-triangle-exclamation",
+        "badge": "🚨 절대 공복 복용 금지 (위출혈 위험)",
+        "title": "반드시 식사 직후 충분한 물과 함께 드세요!",
+        "detail": "공복에 복용 시 위 점막이 손상되어 속쓰림, 위궤양, 위장관 출혈이 발생할 수 있습니다.",
+        "drugName": "이부프로펜"
+      },
+      {
+        "type": "alcohol",
+        "severity": "danger",
+        "icon": "fa-wine-bottle",
+        "badge": "🚨 복용 중 음주 절대 금지",
+        "title": "술과 함께 먹으면 위벽이 헐어 피를 토할 수 있습니다.",
+        "detail": "소염진통제와 알코올의 병용은 위궤양 및 위장 출혈 위험을 수배 이상 높입니다.",
+        "drugName": "이부프로펜"
+      },
+      {
+        "type": "alcohol",
+        "severity": "danger",
+        "icon": "fa-wine-bottle",
+        "badge": "🚨 음주 절대 금기 (치명적 부작용)",
+        "title": "술은 한 모금도 안 됩니다! 젖산산증 쇼크 위험!",
+        "detail": "알코올과 메트포르민이 결합하면 사망 위험이 있는 치명적인 '젖산산증(Lactic Acidosis)'이 발생할 수 있습니다. 복용 중 절대 금주하세요.",
+        "drugName": "메트포르민"
+      },
+      {
+        "type": "dizziness",
+        "severity": "high",
+        "icon": "fa-person-falling",
+        "badge": "⚠️ 기립성 저혈압 및 어지러움 주의",
+        "title": "앉거나 누웠다 일어날 때 천천히 일어나세요!",
+        "detail": "혈관 확장 작용으로 뇌혈류가 일시적으로 감소해 어지럼증과 낙상 위험이 있습니다. 특히 복용 초기에는 급격한 자세 변경을 피하세요.",
+        "drugName": "암로디핀"
+      },
+      {
+        "type": "stomach",
+        "severity": "medium",
+        "icon": "fa-bowl-food",
+        "badge": "⚠️ 반드시 식사 중 또는 식사 직후 복용",
+        "title": "공복에 드시면 심한 속쓰림과 메스꺼움, 설사가 발생합니다.",
+        "detail": "위장 장애를 줄이기 위해 식사 중간이나 식사 마지막 숟가락과 함께 드시는 것이 가장 편안합니다.",
+        "drugName": "메트포르민"
+      }
+    ],
+    "safetyScore": "안전",
+    "timeline": [
+      {
+        "key": "morning_before",
+        "title": "아침 식전 (식사 30분 전)",
+        "icon": "🌅",
+        "time": "07:30",
+        "items": []
+      },
+      {
+        "key": "morning_after",
+        "title": "아침 식후 (식사 30분 후)",
+        "icon": "🥣",
+        "time": "08:30",
+        "items": [
+          {
+            "id": "ibuprofen",
+            "name": "이부프로펜",
+            "inputName": "이부프로펜",
+            "category": "소염진통제 (NSAIDs)",
+            "efficacy": "염증 완화, 관절통, 근육통, 두통, 해열",
+            "timings": [
+              "morning_after",
+              "evening_after"
+            ],
+            "frequency": "1일 2회",
+            "isAutoScheduled": false,
+            "scheduleReason": "",
+            "dosage": "1회 200~400mg, 1일 3회 (식사 직후)",
+            "storage": "실온(1~30℃) 건조한 곳에 보관",
+            "criticalWarnings": [
+              {
+                "type": "stomach_bleed",
+                "severity": "danger",
+                "icon": "fa-triangle-exclamation",
+                "badge": "🚨 절대 공복 복용 금지 (위출혈 위험)",
+                "title": "반드시 식사 직후 충분한 물과 함께 드세요!",
+                "detail": "공복에 복용 시 위 점막이 손상되어 속쓰림, 위궤양, 위장관 출혈이 발생할 수 있습니다."
+              },
+              {
+                "type": "alcohol",
+                "severity": "danger",
+                "icon": "fa-wine-bottle",
+                "badge": "🚨 복용 중 음주 절대 금지",
+                "title": "술과 함께 먹으면 위벽이 헐어 피를 토할 수 있습니다.",
+                "detail": "소염진통제와 알코올의 병용은 위궤양 및 위장 출혈 위험을 수배 이상 높입니다."
+              }
+            ],
+            "administrationTips": [
+              "위 점막을 자극하므로 공복을 피하고 식사 직후 충분한 물과 함께 드세요.",
+              "탈수가 있거나 신장이 약한 분은 신장 손상 위험이 있으니 주의하세요."
+            ],
+            "sideEffects": "위장 장애, 속쓰림, 신장 기능 저하, 부종.",
+            "foodWarnings": [
+              {
+                "food": "술 (알코올)",
+                "severity": "danger",
+                "reason": "위 점막 손상이 배가되어 위출혈, 위궤양 위험이 급증합니다."
+              }
+            ],
+            "supplementTips": "위장 보호를 위해 양배추 유래 성분(비타민U)이나 유산균 섭취가 도움됩니다.",
+            "currentSlot": "morning_after"
+          },
+          {
+            "id": "amlodipine",
+            "name": "암로디핀",
+            "inputName": "암로디핀",
+            "category": "혈압강하제 (칼슘채널차단제)",
+            "efficacy": "고혈압 치료, 관상동맥 질환 및 협심증 증상 완화",
+            "timings": [
+              "morning_after"
+            ],
+            "frequency": "1일 1회",
+            "isAutoScheduled": true,
+            "scheduleReason": "가장 안정적인 약물 흡수 리듬을 위해 추천 시간대로 자동 지정되었습니다.",
+            "dosage": "1일 1회 5mg (증상에 따라 최대 10mg)",
+            "storage": "실온(1~30℃) 건조한 곳, 차광 기밀용기 보관",
+            "criticalWarnings": [
+              {
+                "type": "dizziness",
+                "severity": "high",
+                "icon": "fa-person-falling",
+                "badge": "⚠️ 기립성 저혈압 및 어지러움 주의",
+                "title": "앉거나 누웠다 일어날 때 천천히 일어나세요!",
+                "detail": "혈관 확장 작용으로 뇌혈류가 일시적으로 감소해 어지럼증과 낙상 위험이 있습니다. 특히 복용 초기에는 급격한 자세 변경을 피하세요."
+              }
+            ],
+            "administrationTips": [
+              "매일 일정한 시간(주로 아침)에 복용하는 것이 혈압 조절에 가장 좋습니다.",
+              "복용 초기 어지러움이 생길 수 있으니 천천히 일어나세요.",
+              "임의로 복용을 중단하면 혈압이 급격히 상승할 수 있으므로 의사 상담 없이 중단하지 마세요."
+            ],
+            "sideEffects": "발목이나 하지 부종, 두통, 안면홍조, 어지러움.",
+            "foodWarnings": [
+              {
+                "food": "자몽 및 자몽주스",
+                "severity": "danger",
+                "reason": "자몽 성분이 약물 분해 효소를 억제하여 체내 약물 농도를 급격히 높여 과도한 혈압 저하와 두통, 어지러움을 유발할 수 있습니다."
+              },
+              {
+                "food": "술 (알코올)",
+                "severity": "warning",
+                "reason": "혈관 확장 작용이 겹쳐 급격한 저혈압 및 실신 위험이 증가합니다."
+              }
+            ],
+            "supplementTips": "마그네슘과 비타민D는 혈관 건강에 도움이 되나, 고용량 칼슘제는 약효에 영향을 줄 수 있으므로 2시간 이상 간격을 두고 복용하세요.",
+            "currentSlot": "morning_after"
+          },
+          {
+            "id": "metformin",
+            "name": "메트포르민",
+            "inputName": "메트포르민",
+            "category": "경구용 당뇨병 치료제 (비구아니드계)",
+            "efficacy": "혈당 조절(인슐린 감수성 개선), 제2형 당뇨병 치료 1차 선택약",
+            "timings": [
+              "morning_after",
+              "lunch_after",
+              "evening_after"
+            ],
+            "frequency": "1일 3회",
+            "isAutoScheduled": false,
+            "scheduleReason": "",
+            "dosage": "1회 500mg~1000mg, 1일 2회 (아침/저녁 식사 직후)",
+            "storage": "실온(15~25℃) 건조한 곳에 보관",
+            "criticalWarnings": [
+              {
+                "type": "alcohol",
+                "severity": "danger",
+                "icon": "fa-wine-bottle",
+                "badge": "🚨 음주 절대 금기 (치명적 부작용)",
+                "title": "술은 한 모금도 안 됩니다! 젖산산증 쇼크 위험!",
+                "detail": "알코올과 메트포르민이 결합하면 사망 위험이 있는 치명적인 '젖산산증(Lactic Acidosis)'이 발생할 수 있습니다. 복용 중 절대 금주하세요."
+              },
+              {
+                "type": "stomach",
+                "severity": "medium",
+                "icon": "fa-bowl-food",
+                "badge": "⚠️ 반드시 식사 중 또는 식사 직후 복용",
+                "title": "공복에 드시면 심한 속쓰림과 메스꺼움, 설사가 발생합니다.",
+                "detail": "위장 장애를 줄이기 위해 식사 중간이나 식사 마지막 숟가락과 함께 드시는 것이 가장 편안합니다."
+              }
+            ],
+            "administrationTips": [
+              "위장장애(메스꺼움, 설사)를 줄이기 위해 반드시 식사 중 또는 식사 직후 복용하세요.",
+              "서방정(XR, 서방형)은 쪼개거나 씹지 말고 물과 함께 통째로 삼키세요.",
+              "조영제 검사(CT/MRI) 전후 48시간은 복용을 일시 중단해야 하므로 병원에 꼭 알리세요."
+            ],
+            "sideEffects": "소화불량, 금속성 맛, 복부 팽만, 설사.",
+            "foodWarnings": [
+              {
+                "food": "술 (알코올) 및 과음",
+                "severity": "danger",
+                "reason": "알코올 섭취 시 치명적인 젖산산증 발생 위험이 급격히 증가하므로 반드시 금주해야 합니다."
+              }
+            ],
+            "supplementTips": "장기 복용 시 비타민 B12 흡수가 저해될 수 있으므로 비타민 B군 영양제 섭취를 추천합니다.",
+            "currentSlot": "morning_after"
+          }
+        ]
+      },
+      {
+        "key": "lunch_after",
+        "title": "점심 식후 (식사 30분 후)",
+        "icon": "☀️",
+        "time": "13:00",
+        "items": [
+          {
+            "id": "metformin",
+            "name": "메트포르민",
+            "inputName": "메트포르민",
+            "category": "경구용 당뇨병 치료제 (비구아니드계)",
+            "efficacy": "혈당 조절(인슐린 감수성 개선), 제2형 당뇨병 치료 1차 선택약",
+            "timings": [
+              "morning_after",
+              "lunch_after",
+              "evening_after"
+            ],
+            "frequency": "1일 3회",
+            "isAutoScheduled": false,
+            "scheduleReason": "",
+            "dosage": "1회 500mg~1000mg, 1일 2회 (아침/저녁 식사 직후)",
+            "storage": "실온(15~25℃) 건조한 곳에 보관",
+            "criticalWarnings": [
+              {
+                "type": "alcohol",
+                "severity": "danger",
+                "icon": "fa-wine-bottle",
+                "badge": "🚨 음주 절대 금기 (치명적 부작용)",
+                "title": "술은 한 모금도 안 됩니다! 젖산산증 쇼크 위험!",
+                "detail": "알코올과 메트포르민이 결합하면 사망 위험이 있는 치명적인 '젖산산증(Lactic Acidosis)'이 발생할 수 있습니다. 복용 중 절대 금주하세요."
+              },
+              {
+                "type": "stomach",
+                "severity": "medium",
+                "icon": "fa-bowl-food",
+                "badge": "⚠️ 반드시 식사 중 또는 식사 직후 복용",
+                "title": "공복에 드시면 심한 속쓰림과 메스꺼움, 설사가 발생합니다.",
+                "detail": "위장 장애를 줄이기 위해 식사 중간이나 식사 마지막 숟가락과 함께 드시는 것이 가장 편안합니다."
+              }
+            ],
+            "administrationTips": [
+              "위장장애(메스꺼움, 설사)를 줄이기 위해 반드시 식사 중 또는 식사 직후 복용하세요.",
+              "서방정(XR, 서방형)은 쪼개거나 씹지 말고 물과 함께 통째로 삼키세요.",
+              "조영제 검사(CT/MRI) 전후 48시간은 복용을 일시 중단해야 하므로 병원에 꼭 알리세요."
+            ],
+            "sideEffects": "소화불량, 금속성 맛, 복부 팽만, 설사.",
+            "foodWarnings": [
+              {
+                "food": "술 (알코올) 및 과음",
+                "severity": "danger",
+                "reason": "알코올 섭취 시 치명적인 젖산산증 발생 위험이 급격히 증가하므로 반드시 금주해야 합니다."
+              }
+            ],
+            "supplementTips": "장기 복용 시 비타민 B12 흡수가 저해될 수 있으므로 비타민 B군 영양제 섭취를 추천합니다.",
+            "currentSlot": "lunch_after"
+          }
+        ]
+      },
+      {
+        "key": "evening_after",
+        "title": "저녁 식후 (식사 30분 후)",
+        "icon": "🌙",
+        "time": "19:00",
+        "items": [
+          {
+            "id": "ibuprofen",
+            "name": "이부프로펜",
+            "inputName": "이부프로펜",
+            "category": "소염진통제 (NSAIDs)",
+            "efficacy": "염증 완화, 관절통, 근육통, 두통, 해열",
+            "timings": [
+              "morning_after",
+              "evening_after"
+            ],
+            "frequency": "1일 2회",
+            "isAutoScheduled": false,
+            "scheduleReason": "",
+            "dosage": "1회 200~400mg, 1일 3회 (식사 직후)",
+            "storage": "실온(1~30℃) 건조한 곳에 보관",
+            "criticalWarnings": [
+              {
+                "type": "stomach_bleed",
+                "severity": "danger",
+                "icon": "fa-triangle-exclamation",
+                "badge": "🚨 절대 공복 복용 금지 (위출혈 위험)",
+                "title": "반드시 식사 직후 충분한 물과 함께 드세요!",
+                "detail": "공복에 복용 시 위 점막이 손상되어 속쓰림, 위궤양, 위장관 출혈이 발생할 수 있습니다."
+              },
+              {
+                "type": "alcohol",
+                "severity": "danger",
+                "icon": "fa-wine-bottle",
+                "badge": "🚨 복용 중 음주 절대 금지",
+                "title": "술과 함께 먹으면 위벽이 헐어 피를 토할 수 있습니다.",
+                "detail": "소염진통제와 알코올의 병용은 위궤양 및 위장 출혈 위험을 수배 이상 높입니다."
+              }
+            ],
+            "administrationTips": [
+              "위 점막을 자극하므로 공복을 피하고 식사 직후 충분한 물과 함께 드세요.",
+              "탈수가 있거나 신장이 약한 분은 신장 손상 위험이 있으니 주의하세요."
+            ],
+            "sideEffects": "위장 장애, 속쓰림, 신장 기능 저하, 부종.",
+            "foodWarnings": [
+              {
+                "food": "술 (알코올)",
+                "severity": "danger",
+                "reason": "위 점막 손상이 배가되어 위출혈, 위궤양 위험이 급증합니다."
+              }
+            ],
+            "supplementTips": "위장 보호를 위해 양배추 유래 성분(비타민U)이나 유산균 섭취가 도움됩니다.",
+            "currentSlot": "evening_after"
+          },
+          {
+            "id": "metformin",
+            "name": "메트포르민",
+            "inputName": "메트포르민",
+            "category": "경구용 당뇨병 치료제 (비구아니드계)",
+            "efficacy": "혈당 조절(인슐린 감수성 개선), 제2형 당뇨병 치료 1차 선택약",
+            "timings": [
+              "morning_after",
+              "lunch_after",
+              "evening_after"
+            ],
+            "frequency": "1일 3회",
+            "isAutoScheduled": false,
+            "scheduleReason": "",
+            "dosage": "1회 500mg~1000mg, 1일 2회 (아침/저녁 식사 직후)",
+            "storage": "실온(15~25℃) 건조한 곳에 보관",
+            "criticalWarnings": [
+              {
+                "type": "alcohol",
+                "severity": "danger",
+                "icon": "fa-wine-bottle",
+                "badge": "🚨 음주 절대 금기 (치명적 부작용)",
+                "title": "술은 한 모금도 안 됩니다! 젖산산증 쇼크 위험!",
+                "detail": "알코올과 메트포르민이 결합하면 사망 위험이 있는 치명적인 '젖산산증(Lactic Acidosis)'이 발생할 수 있습니다. 복용 중 절대 금주하세요."
+              },
+              {
+                "type": "stomach",
+                "severity": "medium",
+                "icon": "fa-bowl-food",
+                "badge": "⚠️ 반드시 식사 중 또는 식사 직후 복용",
+                "title": "공복에 드시면 심한 속쓰림과 메스꺼움, 설사가 발생합니다.",
+                "detail": "위장 장애를 줄이기 위해 식사 중간이나 식사 마지막 숟가락과 함께 드시는 것이 가장 편안합니다."
+              }
+            ],
+            "administrationTips": [
+              "위장장애(메스꺼움, 설사)를 줄이기 위해 반드시 식사 중 또는 식사 직후 복용하세요.",
+              "서방정(XR, 서방형)은 쪼개거나 씹지 말고 물과 함께 통째로 삼키세요.",
+              "조영제 검사(CT/MRI) 전후 48시간은 복용을 일시 중단해야 하므로 병원에 꼭 알리세요."
+            ],
+            "sideEffects": "소화불량, 금속성 맛, 복부 팽만, 설사.",
+            "foodWarnings": [
+              {
+                "food": "술 (알코올) 및 과음",
+                "severity": "danger",
+                "reason": "알코올 섭취 시 치명적인 젖산산증 발생 위험이 급격히 증가하므로 반드시 금주해야 합니다."
+              }
+            ],
+            "supplementTips": "장기 복용 시 비타민 B12 흡수가 저해될 수 있으므로 비타민 B군 영양제 섭취를 추천합니다.",
+            "currentSlot": "evening_after"
+          }
+        ]
+      },
+      {
+        "key": "bedtime",
+        "title": "취침 전 (잠들기 30분~1시간 전)",
+        "icon": "🛌",
+        "time": "22:30",
+        "items": []
+      }
+    ],
+    "ddiWarnings": [],
+    "foodWarnings": [
+      {
+        "food": "술 (알코올)",
+        "severity": "danger",
+        "reason": "위 점막 손상이 배가되어 위출혈, 위궤양 위험이 급증합니다.",
+        "relatedDrugs": [
+          "이부프로펜"
+        ]
+      },
+      {
+        "food": "자몽 및 자몽주스",
+        "severity": "danger",
+        "reason": "자몽 성분이 약물 분해 효소를 억제하여 체내 약물 농도를 급격히 높여 과도한 혈압 저하와 두통, 어지러움을 유발할 수 있습니다.",
+        "relatedDrugs": [
+          "암로디핀"
+        ]
+      },
+      {
+        "food": "술 (알코올)",
+        "severity": "warning",
+        "reason": "혈관 확장 작용이 겹쳐 급격한 저혈압 및 실신 위험이 증가합니다.",
+        "relatedDrugs": [
+          "암로디핀"
+        ]
+      },
+      {
+        "food": "술 (알코올) 및 과음",
+        "severity": "danger",
+        "reason": "알코올 섭취 시 치명적인 젖산산증 발생 위험이 급격히 증가하므로 반드시 금주해야 합니다.",
+        "relatedDrugs": [
+          "메트포르민"
+        ]
+      }
+    ],
+    "supplements": [
+      {
+        "drug": "이부프로펜",
+        "tip": "위장 보호를 위해 양배추 유래 성분(비타민U)이나 유산균 섭취가 도움됩니다."
+      },
+      {
+        "drug": "암로디핀",
+        "tip": "마그네슘과 비타민D는 혈관 건강에 도움이 되나, 고용량 칼슘제는 약효에 영향을 줄 수 있으므로 2시간 이상 간격을 두고 복용하세요."
+      },
+      {
+        "drug": "메트포르민",
+        "tip": "장기 복용 시 비타민 B12 흡수가 저해될 수 있으므로 비타민 B군 영양제 섭취를 추천합니다."
+      }
+    ],
+    "dietPlans": [
+      {
+        "condition": "만성 위염/역류성 식도염",
+        "recommend": [
+          "양배추, 브로콜리(비타민 U)",
+          "감자, 마(위점막 보호)",
+          "흰살생선",
+          "따뜻한 보리차"
+        ],
+        "avoid": [
+          "카페인(커피, 에너지음료)",
+          "맵고 자극적인 양념",
+          "밀가루, 야식 후 바로 눕기"
+        ],
+        "waterIntake": "식사 도중 많은 물 섭취를 피하고 식간에 마시기",
+        "keyTip": "식후 최소 2시간 동안은 눕지 마세요."
+      },
+      {
+        "condition": "당뇨병",
+        "recommend": [
+          "복합 탄수화물(현미, 귀리)",
+          "해조류(미역, 다시마)와 나물",
+          "단백질(닭가슴살, 두부, 계란)",
+          "채소-단백질-탄수화물 순서 식사"
+        ],
+        "avoid": [
+          "단순당(설탕, 액상과당, 믹스커피)",
+          "흰쌀밥, 떡, 빵(고GI 식품)",
+          "과일 통조림",
+          "야식"
+        ],
+        "waterIntake": "하루 2L 권장 (탈수 방지)",
+        "keyTip": "식사는 거르지 않고 정해진 시간에 드셔야 저혈당을 예방할 수 있습니다."
+      },
+      {
+        "condition": "고지혈증",
+        "recommend": [
+          "불포화지방산(올리브유, 들기름)",
+          "수용성 식이섬유(오트밀, 사과)",
+          "콩류 및 두부",
+          "자색 채소(가지, 적양파)"
+        ],
+        "avoid": [
+          "포화/트랜스지방(마가린, 튀김, 삼겹살)",
+          "내장류(곱창, 간)",
+          "자몽(스타틴 복용 시 절대 금기)"
+        ],
+        "waterIntake": "하루 1.5L 이상 섭취",
+        "keyTip": "스타틴 복용 환자는 코엔자임Q10 식품(견과류 등)을 챙기세요."
+      }
+    ],
+    "exercisePlan": {
+      "ageGroup": "청장년층 (20~40대)",
+      "recommend": [
+        "중강도 유산소 30분 (조깅, 수영, 자전거) 주 3~5회",
+        "주 2회 근력 운동"
+      ],
+      "intensity": "약간 숨이 차고 땀이 날 정도의 중강도",
+      "ageTip": "식후 30분~1시간 후 운동하면 혈당 스파이크 억제에 효과적입니다.",
+      "bmi": "18.4 (저체중 (점진적 근력 강화 권장))",
+      "medWarnings": []
+    },
+    "createdAt": "2026-10-30T10:09:07.208Z"
+  },
+  {
+    "id": "rec_1793354540635_jtijt",
+    "userId": "usr_1793326773926_ulav",
+    "patientName": "박정민",
+    "gender": "여성",
+    "age": 19,
+    "weight": 47,
+    "conditions": [
+      "만성 위염/역류성 식도염",
+      "당뇨병",
+      "고지혈증"
+    ],
+    "medications": [
+      {
+        "id": "metformin",
+        "name": "메트포르민",
+        "inputName": "메트포르민",
+        "category": "경구용 당뇨병 치료제 (비구아니드계)",
+        "efficacy": "혈당 조절(인슐린 감수성 개선), 제2형 당뇨병 치료 1차 선택약",
+        "timings": [
+          "morning_after",
+          "evening_after"
+        ],
+        "frequency": "1일 2회",
+        "isAutoScheduled": true,
+        "scheduleReason": "가장 안정적인 약물 흡수 리듬을 위해 추천 시간대로 자동 지정되었습니다.",
+        "dosage": "1회 500mg~1000mg, 1일 2회 (아침/저녁 식사 직후)",
+        "storage": "실온(15~25℃) 건조한 곳에 보관",
+        "criticalWarnings": [
+          {
+            "type": "alcohol",
+            "severity": "danger",
+            "icon": "fa-wine-bottle",
+            "badge": "🚨 음주 절대 금기 (치명적 부작용)",
+            "title": "술은 한 모금도 안 됩니다! 젖산산증 쇼크 위험!",
+            "detail": "알코올과 메트포르민이 결합하면 사망 위험이 있는 치명적인 '젖산산증(Lactic Acidosis)'이 발생할 수 있습니다. 복용 중 절대 금주하세요."
+          },
+          {
+            "type": "stomach",
+            "severity": "medium",
+            "icon": "fa-bowl-food",
+            "badge": "⚠️ 반드시 식사 중 또는 식사 직후 복용",
+            "title": "공복에 드시면 심한 속쓰림과 메스꺼움, 설사가 발생합니다.",
+            "detail": "위장 장애를 줄이기 위해 식사 중간이나 식사 마지막 숟가락과 함께 드시는 것이 가장 편안합니다."
+          }
+        ],
+        "administrationTips": [
+          "위장장애(메스꺼움, 설사)를 줄이기 위해 반드시 식사 중 또는 식사 직후 복용하세요.",
+          "서방정(XR, 서방형)은 쪼개거나 씹지 말고 물과 함께 통째로 삼키세요.",
+          "조영제 검사(CT/MRI) 전후 48시간은 복용을 일시 중단해야 하므로 병원에 꼭 알리세요."
+        ],
+        "sideEffects": "소화불량, 금속성 맛, 복부 팽만, 설사.",
+        "foodWarnings": [
+          {
+            "food": "술 (알코올) 및 과음",
+            "severity": "danger",
+            "reason": "알코올 섭취 시 치명적인 젖산산증 발생 위험이 급격히 증가하므로 반드시 금주해야 합니다."
+          }
+        ],
+        "supplementTips": "장기 복용 시 비타민 B12 흡수가 저해될 수 있으므로 비타민 B군 영양제 섭취를 추천합니다."
+      },
+      {
+        "id": "atorvastatin",
+        "name": "아토르바스타틴",
+        "inputName": "아토르바스타틴",
+        "category": "이상지질혈증(고지혈증) 치료제 (스타틴계)",
+        "efficacy": "혈중 LDL 콜레스테롤 및 중성지방 감소, 심혈관 질환 예방",
+        "timings": [
+          "evening_after"
+        ],
+        "frequency": "1일 1회",
+        "isAutoScheduled": true,
+        "scheduleReason": "간에서 콜레스테롤 합성이 활발한 시간대에 맞춰 '저녁 식후'로 자동 지정되었습니다.",
+        "dosage": "1일 1회 10~20mg (저녁 식후)",
+        "storage": "실온(15~25℃) 습기를 피하여 보관",
+        "criticalWarnings": [
+          {
+            "type": "grapefruit",
+            "severity": "danger",
+            "icon": "fa-ban",
+            "badge": "🚨 자몽 및 자몽주스 절대 섭취 금지",
+            "title": "자몽 성분이 약물 농도를 폭증시켜 근육 괴사를 부릅니다!",
+            "detail": "자몽이 간 대사를 방해하여 심각한 근육 손상(횡문근융해증) 및 급성 신부전을 일으킬 수 있습니다."
+          },
+          {
+            "type": "muscle_pain",
+            "severity": "high",
+            "icon": "fa-person-dots-from-line",
+            "badge": "⚠️ 원인 모를 근육통 발생 시 즉시 문의",
+            "title": "종아리나 허벅지 등에 이유 없는 심한 근육통이 생기면 복용을 멈추세요.",
+            "detail": "콜라색/갈색 소변이나 심한 근육통이 나타나면 즉시 병원 진료를 받아야 합니다."
+          }
+        ],
+        "administrationTips": [
+          "간에서 콜레스테롤 합성이 가장 활발한 저녁 식후 복용 시 효과가 가장 뛰어납니다.",
+          "이유 없는 근육통, 근육 경련, 붉은 소변이 나타나면 즉시 진료를 받으세요."
+        ],
+        "sideEffects": "근육통, 소화불량, 간 수치 상승.",
+        "foodWarnings": [
+          {
+            "food": "자몽 및 자몽주스",
+            "severity": "danger",
+            "reason": "체내 스타틴 농도가 3~4배 이상 폭증하여 횡문근융해증을 유발합니다."
+          }
+        ],
+        "supplementTips": "스타틴 복용 시 체내 코엔자임Q10이 고갈되므로 CoQ10 영양제 병용을 권장합니다."
+      },
+      {
+        "id": "amlodipine",
+        "name": "암로디핀",
+        "inputName": "암로디핀",
+        "category": "혈압강하제 (칼슘채널차단제)",
+        "efficacy": "고혈압 치료, 관상동맥 질환 및 협심증 증상 완화",
+        "timings": [
+          "morning_after"
+        ],
+        "frequency": "1일 1회",
+        "isAutoScheduled": true,
+        "scheduleReason": "가장 안정적인 약물 흡수 리듬을 위해 추천 시간대로 자동 지정되었습니다.",
+        "dosage": "1일 1회 5mg (증상에 따라 최대 10mg)",
+        "storage": "실온(1~30℃) 건조한 곳, 차광 기밀용기 보관",
+        "criticalWarnings": [
+          {
+            "type": "dizziness",
+            "severity": "high",
+            "icon": "fa-person-falling",
+            "badge": "⚠️ 기립성 저혈압 및 어지러움 주의",
+            "title": "앉거나 누웠다 일어날 때 천천히 일어나세요!",
+            "detail": "혈관 확장 작용으로 뇌혈류가 일시적으로 감소해 어지럼증과 낙상 위험이 있습니다. 특히 복용 초기에는 급격한 자세 변경을 피하세요."
+          }
+        ],
+        "administrationTips": [
+          "매일 일정한 시간(주로 아침)에 복용하는 것이 혈압 조절에 가장 좋습니다.",
+          "복용 초기 어지러움이 생길 수 있으니 천천히 일어나세요.",
+          "임의로 복용을 중단하면 혈압이 급격히 상승할 수 있으므로 의사 상담 없이 중단하지 마세요."
+        ],
+        "sideEffects": "발목이나 하지 부종, 두통, 안면홍조, 어지러움.",
+        "foodWarnings": [
+          {
+            "food": "자몽 및 자몽주스",
+            "severity": "danger",
+            "reason": "자몽 성분이 약물 분해 효소를 억제하여 체내 약물 농도를 급격히 높여 과도한 혈압 저하와 두통, 어지러움을 유발할 수 있습니다."
+          },
+          {
+            "food": "술 (알코올)",
+            "severity": "warning",
+            "reason": "혈관 확장 작용이 겹쳐 급격한 저혈압 및 실신 위험이 증가합니다."
+          }
+        ],
+        "supplementTips": "마그네슘과 비타민D는 혈관 건강에 도움이 되나, 고용량 칼슘제는 약효에 영향을 줄 수 있으므로 2시간 이상 간격을 두고 복용하세요."
+      },
+      {
+        "id": "omeprazole",
+        "name": "오메프라졸",
+        "inputName": "오메프라졸",
+        "category": "위산분비억제제 (PPI 계열)",
+        "efficacy": "위궤양, 십이지장궤양, 역류성 식도염 치료 및 위장 보호",
+        "timings": [
+          "morning_before"
+        ],
+        "frequency": "1일 1회",
+        "isAutoScheduled": true,
+        "scheduleReason": "공복에 복용해야 약효가 온전히 흡수되므로 '아침 식전'으로 자동 지정되었습니다.",
+        "dosage": "1일 1회 20mg (아침 식사 30분~1시간 전 공복)",
+        "storage": "실온(15~30℃) 차광 기밀용기 보관",
+        "criticalWarnings": [
+          {
+            "type": "empty_stomach",
+            "severity": "high",
+            "icon": "fa-clock",
+            "badge": "⚠️ 반드시 아침 식전(30분 전) 공복 복용",
+            "title": "식사 후에 드시면 약효가 절반 이하로 떨어집니다!",
+            "detail": "음식물이 들어가기 전 위산 분비 펌프를 미리 차단해야 하므로 기상 직후 또는 아침 식사 30분 전에 드셔야 합니다."
+          },
+          {
+            "type": "swallow_whole",
+            "severity": "medium",
+            "icon": "fa-capsules",
+            "badge": "⚠️ 캡슐을 열거나 씹지 마세요",
+            "title": "장까지 안전하게 도달하도록 통째로 물과 함께 삼키세요.",
+            "detail": "약물이 위산에 파괴되지 않도록 특수 코팅되어 있으므로 부수지 마세요."
+          }
+        ],
+        "administrationTips": [
+          "아침 식사 30분~1시간 전 공복에 복용해야 가장 효과적입니다.",
+          "캡슐을 열거나 씹지 말고 물과 함께 통째로 삼키세요."
+        ],
+        "sideEffects": "두통, 복통, 변비, 설사.",
+        "foodWarnings": [
+          {
+            "food": "탄산음료 / 매운 음식 / 카페인",
+            "severity": "warning",
+            "reason": "위산 역류를 악화시켜 약효를 반감시킵니다."
+          }
+        ],
+        "supplementTips": "장기 복용 시 칼슘과 비타민 B12 흡수가 저하될 수 있으니 주기적인 보충이 좋습니다."
+      }
+    ],
+    "criticalWarnings": [
+      {
+        "type": "alcohol",
+        "severity": "danger",
+        "icon": "fa-wine-bottle",
+        "badge": "🚨 음주 절대 금기 (치명적 부작용)",
+        "title": "술은 한 모금도 안 됩니다! 젖산산증 쇼크 위험!",
+        "detail": "알코올과 메트포르민이 결합하면 사망 위험이 있는 치명적인 '젖산산증(Lactic Acidosis)'이 발생할 수 있습니다. 복용 중 절대 금주하세요.",
+        "drugName": "메트포르민"
+      },
+      {
+        "type": "grapefruit",
+        "severity": "danger",
+        "icon": "fa-ban",
+        "badge": "🚨 자몽 및 자몽주스 절대 섭취 금지",
+        "title": "자몽 성분이 약물 농도를 폭증시켜 근육 괴사를 부릅니다!",
+        "detail": "자몽이 간 대사를 방해하여 심각한 근육 손상(횡문근융해증) 및 급성 신부전을 일으킬 수 있습니다.",
+        "drugName": "아토르바스타틴"
+      },
+      {
+        "type": "muscle_pain",
+        "severity": "high",
+        "icon": "fa-person-dots-from-line",
+        "badge": "⚠️ 원인 모를 근육통 발생 시 즉시 문의",
+        "title": "종아리나 허벅지 등에 이유 없는 심한 근육통이 생기면 복용을 멈추세요.",
+        "detail": "콜라색/갈색 소변이나 심한 근육통이 나타나면 즉시 병원 진료를 받아야 합니다.",
+        "drugName": "아토르바스타틴"
+      },
+      {
+        "type": "dizziness",
+        "severity": "high",
+        "icon": "fa-person-falling",
+        "badge": "⚠️ 기립성 저혈압 및 어지러움 주의",
+        "title": "앉거나 누웠다 일어날 때 천천히 일어나세요!",
+        "detail": "혈관 확장 작용으로 뇌혈류가 일시적으로 감소해 어지럼증과 낙상 위험이 있습니다. 특히 복용 초기에는 급격한 자세 변경을 피하세요.",
+        "drugName": "암로디핀"
+      },
+      {
+        "type": "empty_stomach",
+        "severity": "high",
+        "icon": "fa-clock",
+        "badge": "⚠️ 반드시 아침 식전(30분 전) 공복 복용",
+        "title": "식사 후에 드시면 약효가 절반 이하로 떨어집니다!",
+        "detail": "음식물이 들어가기 전 위산 분비 펌프를 미리 차단해야 하므로 기상 직후 또는 아침 식사 30분 전에 드셔야 합니다.",
+        "drugName": "오메프라졸"
+      },
+      {
+        "type": "stomach",
+        "severity": "medium",
+        "icon": "fa-bowl-food",
+        "badge": "⚠️ 반드시 식사 중 또는 식사 직후 복용",
+        "title": "공복에 드시면 심한 속쓰림과 메스꺼움, 설사가 발생합니다.",
+        "detail": "위장 장애를 줄이기 위해 식사 중간이나 식사 마지막 숟가락과 함께 드시는 것이 가장 편안합니다.",
+        "drugName": "메트포르민"
+      },
+      {
+        "type": "swallow_whole",
+        "severity": "medium",
+        "icon": "fa-capsules",
+        "badge": "⚠️ 캡슐을 열거나 씹지 마세요",
+        "title": "장까지 안전하게 도달하도록 통째로 물과 함께 삼키세요.",
+        "detail": "약물이 위산에 파괴되지 않도록 특수 코팅되어 있으므로 부수지 마세요.",
+        "drugName": "오메프라졸"
+      }
+    ],
+    "safetyScore": "안전",
+    "timeline": [
+      {
+        "key": "morning_before",
+        "title": "아침 식전 (식사 30분 전)",
+        "icon": "🌅",
+        "time": "07:30",
+        "items": [
+          {
+            "id": "omeprazole",
+            "name": "오메프라졸",
+            "inputName": "오메프라졸",
+            "category": "위산분비억제제 (PPI 계열)",
+            "efficacy": "위궤양, 십이지장궤양, 역류성 식도염 치료 및 위장 보호",
+            "timings": [
+              "morning_before"
+            ],
+            "frequency": "1일 1회",
+            "isAutoScheduled": true,
+            "scheduleReason": "공복에 복용해야 약효가 온전히 흡수되므로 '아침 식전'으로 자동 지정되었습니다.",
+            "dosage": "1일 1회 20mg (아침 식사 30분~1시간 전 공복)",
+            "storage": "실온(15~30℃) 차광 기밀용기 보관",
+            "criticalWarnings": [
+              {
+                "type": "empty_stomach",
+                "severity": "high",
+                "icon": "fa-clock",
+                "badge": "⚠️ 반드시 아침 식전(30분 전) 공복 복용",
+                "title": "식사 후에 드시면 약효가 절반 이하로 떨어집니다!",
+                "detail": "음식물이 들어가기 전 위산 분비 펌프를 미리 차단해야 하므로 기상 직후 또는 아침 식사 30분 전에 드셔야 합니다."
+              },
+              {
+                "type": "swallow_whole",
+                "severity": "medium",
+                "icon": "fa-capsules",
+                "badge": "⚠️ 캡슐을 열거나 씹지 마세요",
+                "title": "장까지 안전하게 도달하도록 통째로 물과 함께 삼키세요.",
+                "detail": "약물이 위산에 파괴되지 않도록 특수 코팅되어 있으므로 부수지 마세요."
+              }
+            ],
+            "administrationTips": [
+              "아침 식사 30분~1시간 전 공복에 복용해야 가장 효과적입니다.",
+              "캡슐을 열거나 씹지 말고 물과 함께 통째로 삼키세요."
+            ],
+            "sideEffects": "두통, 복통, 변비, 설사.",
+            "foodWarnings": [
+              {
+                "food": "탄산음료 / 매운 음식 / 카페인",
+                "severity": "warning",
+                "reason": "위산 역류를 악화시켜 약효를 반감시킵니다."
+              }
+            ],
+            "supplementTips": "장기 복용 시 칼슘과 비타민 B12 흡수가 저하될 수 있으니 주기적인 보충이 좋습니다.",
+            "currentSlot": "morning_before"
+          }
+        ]
+      },
+      {
+        "key": "morning_after",
+        "title": "아침 식후 (식사 30분 후)",
+        "icon": "🥣",
+        "time": "08:30",
+        "items": [
+          {
+            "id": "metformin",
+            "name": "메트포르민",
+            "inputName": "메트포르민",
+            "category": "경구용 당뇨병 치료제 (비구아니드계)",
+            "efficacy": "혈당 조절(인슐린 감수성 개선), 제2형 당뇨병 치료 1차 선택약",
+            "timings": [
+              "morning_after",
+              "evening_after"
+            ],
+            "frequency": "1일 2회",
+            "isAutoScheduled": true,
+            "scheduleReason": "가장 안정적인 약물 흡수 리듬을 위해 추천 시간대로 자동 지정되었습니다.",
+            "dosage": "1회 500mg~1000mg, 1일 2회 (아침/저녁 식사 직후)",
+            "storage": "실온(15~25℃) 건조한 곳에 보관",
+            "criticalWarnings": [
+              {
+                "type": "alcohol",
+                "severity": "danger",
+                "icon": "fa-wine-bottle",
+                "badge": "🚨 음주 절대 금기 (치명적 부작용)",
+                "title": "술은 한 모금도 안 됩니다! 젖산산증 쇼크 위험!",
+                "detail": "알코올과 메트포르민이 결합하면 사망 위험이 있는 치명적인 '젖산산증(Lactic Acidosis)'이 발생할 수 있습니다. 복용 중 절대 금주하세요."
+              },
+              {
+                "type": "stomach",
+                "severity": "medium",
+                "icon": "fa-bowl-food",
+                "badge": "⚠️ 반드시 식사 중 또는 식사 직후 복용",
+                "title": "공복에 드시면 심한 속쓰림과 메스꺼움, 설사가 발생합니다.",
+                "detail": "위장 장애를 줄이기 위해 식사 중간이나 식사 마지막 숟가락과 함께 드시는 것이 가장 편안합니다."
+              }
+            ],
+            "administrationTips": [
+              "위장장애(메스꺼움, 설사)를 줄이기 위해 반드시 식사 중 또는 식사 직후 복용하세요.",
+              "서방정(XR, 서방형)은 쪼개거나 씹지 말고 물과 함께 통째로 삼키세요.",
+              "조영제 검사(CT/MRI) 전후 48시간은 복용을 일시 중단해야 하므로 병원에 꼭 알리세요."
+            ],
+            "sideEffects": "소화불량, 금속성 맛, 복부 팽만, 설사.",
+            "foodWarnings": [
+              {
+                "food": "술 (알코올) 및 과음",
+                "severity": "danger",
+                "reason": "알코올 섭취 시 치명적인 젖산산증 발생 위험이 급격히 증가하므로 반드시 금주해야 합니다."
+              }
+            ],
+            "supplementTips": "장기 복용 시 비타민 B12 흡수가 저해될 수 있으므로 비타민 B군 영양제 섭취를 추천합니다.",
+            "currentSlot": "morning_after"
+          },
+          {
+            "id": "amlodipine",
+            "name": "암로디핀",
+            "inputName": "암로디핀",
+            "category": "혈압강하제 (칼슘채널차단제)",
+            "efficacy": "고혈압 치료, 관상동맥 질환 및 협심증 증상 완화",
+            "timings": [
+              "morning_after"
+            ],
+            "frequency": "1일 1회",
+            "isAutoScheduled": true,
+            "scheduleReason": "가장 안정적인 약물 흡수 리듬을 위해 추천 시간대로 자동 지정되었습니다.",
+            "dosage": "1일 1회 5mg (증상에 따라 최대 10mg)",
+            "storage": "실온(1~30℃) 건조한 곳, 차광 기밀용기 보관",
+            "criticalWarnings": [
+              {
+                "type": "dizziness",
+                "severity": "high",
+                "icon": "fa-person-falling",
+                "badge": "⚠️ 기립성 저혈압 및 어지러움 주의",
+                "title": "앉거나 누웠다 일어날 때 천천히 일어나세요!",
+                "detail": "혈관 확장 작용으로 뇌혈류가 일시적으로 감소해 어지럼증과 낙상 위험이 있습니다. 특히 복용 초기에는 급격한 자세 변경을 피하세요."
+              }
+            ],
+            "administrationTips": [
+              "매일 일정한 시간(주로 아침)에 복용하는 것이 혈압 조절에 가장 좋습니다.",
+              "복용 초기 어지러움이 생길 수 있으니 천천히 일어나세요.",
+              "임의로 복용을 중단하면 혈압이 급격히 상승할 수 있으므로 의사 상담 없이 중단하지 마세요."
+            ],
+            "sideEffects": "발목이나 하지 부종, 두통, 안면홍조, 어지러움.",
+            "foodWarnings": [
+              {
+                "food": "자몽 및 자몽주스",
+                "severity": "danger",
+                "reason": "자몽 성분이 약물 분해 효소를 억제하여 체내 약물 농도를 급격히 높여 과도한 혈압 저하와 두통, 어지러움을 유발할 수 있습니다."
+              },
+              {
+                "food": "술 (알코올)",
+                "severity": "warning",
+                "reason": "혈관 확장 작용이 겹쳐 급격한 저혈압 및 실신 위험이 증가합니다."
+              }
+            ],
+            "supplementTips": "마그네슘과 비타민D는 혈관 건강에 도움이 되나, 고용량 칼슘제는 약효에 영향을 줄 수 있으므로 2시간 이상 간격을 두고 복용하세요.",
+            "currentSlot": "morning_after"
+          }
+        ]
+      },
+      {
+        "key": "lunch_after",
+        "title": "점심 식후 (식사 30분 후)",
+        "icon": "☀️",
+        "time": "13:00",
+        "items": []
+      },
+      {
+        "key": "evening_after",
+        "title": "저녁 식후 (식사 30분 후)",
+        "icon": "🌙",
+        "time": "19:00",
+        "items": [
+          {
+            "id": "metformin",
+            "name": "메트포르민",
+            "inputName": "메트포르민",
+            "category": "경구용 당뇨병 치료제 (비구아니드계)",
+            "efficacy": "혈당 조절(인슐린 감수성 개선), 제2형 당뇨병 치료 1차 선택약",
+            "timings": [
+              "morning_after",
+              "evening_after"
+            ],
+            "frequency": "1일 2회",
+            "isAutoScheduled": true,
+            "scheduleReason": "가장 안정적인 약물 흡수 리듬을 위해 추천 시간대로 자동 지정되었습니다.",
+            "dosage": "1회 500mg~1000mg, 1일 2회 (아침/저녁 식사 직후)",
+            "storage": "실온(15~25℃) 건조한 곳에 보관",
+            "criticalWarnings": [
+              {
+                "type": "alcohol",
+                "severity": "danger",
+                "icon": "fa-wine-bottle",
+                "badge": "🚨 음주 절대 금기 (치명적 부작용)",
+                "title": "술은 한 모금도 안 됩니다! 젖산산증 쇼크 위험!",
+                "detail": "알코올과 메트포르민이 결합하면 사망 위험이 있는 치명적인 '젖산산증(Lactic Acidosis)'이 발생할 수 있습니다. 복용 중 절대 금주하세요."
+              },
+              {
+                "type": "stomach",
+                "severity": "medium",
+                "icon": "fa-bowl-food",
+                "badge": "⚠️ 반드시 식사 중 또는 식사 직후 복용",
+                "title": "공복에 드시면 심한 속쓰림과 메스꺼움, 설사가 발생합니다.",
+                "detail": "위장 장애를 줄이기 위해 식사 중간이나 식사 마지막 숟가락과 함께 드시는 것이 가장 편안합니다."
+              }
+            ],
+            "administrationTips": [
+              "위장장애(메스꺼움, 설사)를 줄이기 위해 반드시 식사 중 또는 식사 직후 복용하세요.",
+              "서방정(XR, 서방형)은 쪼개거나 씹지 말고 물과 함께 통째로 삼키세요.",
+              "조영제 검사(CT/MRI) 전후 48시간은 복용을 일시 중단해야 하므로 병원에 꼭 알리세요."
+            ],
+            "sideEffects": "소화불량, 금속성 맛, 복부 팽만, 설사.",
+            "foodWarnings": [
+              {
+                "food": "술 (알코올) 및 과음",
+                "severity": "danger",
+                "reason": "알코올 섭취 시 치명적인 젖산산증 발생 위험이 급격히 증가하므로 반드시 금주해야 합니다."
+              }
+            ],
+            "supplementTips": "장기 복용 시 비타민 B12 흡수가 저해될 수 있으므로 비타민 B군 영양제 섭취를 추천합니다.",
+            "currentSlot": "evening_after"
+          },
+          {
+            "id": "atorvastatin",
+            "name": "아토르바스타틴",
+            "inputName": "아토르바스타틴",
+            "category": "이상지질혈증(고지혈증) 치료제 (스타틴계)",
+            "efficacy": "혈중 LDL 콜레스테롤 및 중성지방 감소, 심혈관 질환 예방",
+            "timings": [
+              "evening_after"
+            ],
+            "frequency": "1일 1회",
+            "isAutoScheduled": true,
+            "scheduleReason": "간에서 콜레스테롤 합성이 활발한 시간대에 맞춰 '저녁 식후'로 자동 지정되었습니다.",
+            "dosage": "1일 1회 10~20mg (저녁 식후)",
+            "storage": "실온(15~25℃) 습기를 피하여 보관",
+            "criticalWarnings": [
+              {
+                "type": "grapefruit",
+                "severity": "danger",
+                "icon": "fa-ban",
+                "badge": "🚨 자몽 및 자몽주스 절대 섭취 금지",
+                "title": "자몽 성분이 약물 농도를 폭증시켜 근육 괴사를 부릅니다!",
+                "detail": "자몽이 간 대사를 방해하여 심각한 근육 손상(횡문근융해증) 및 급성 신부전을 일으킬 수 있습니다."
+              },
+              {
+                "type": "muscle_pain",
+                "severity": "high",
+                "icon": "fa-person-dots-from-line",
+                "badge": "⚠️ 원인 모를 근육통 발생 시 즉시 문의",
+                "title": "종아리나 허벅지 등에 이유 없는 심한 근육통이 생기면 복용을 멈추세요.",
+                "detail": "콜라색/갈색 소변이나 심한 근육통이 나타나면 즉시 병원 진료를 받아야 합니다."
+              }
+            ],
+            "administrationTips": [
+              "간에서 콜레스테롤 합성이 가장 활발한 저녁 식후 복용 시 효과가 가장 뛰어납니다.",
+              "이유 없는 근육통, 근육 경련, 붉은 소변이 나타나면 즉시 진료를 받으세요."
+            ],
+            "sideEffects": "근육통, 소화불량, 간 수치 상승.",
+            "foodWarnings": [
+              {
+                "food": "자몽 및 자몽주스",
+                "severity": "danger",
+                "reason": "체내 스타틴 농도가 3~4배 이상 폭증하여 횡문근융해증을 유발합니다."
+              }
+            ],
+            "supplementTips": "스타틴 복용 시 체내 코엔자임Q10이 고갈되므로 CoQ10 영양제 병용을 권장합니다.",
+            "currentSlot": "evening_after"
+          }
+        ]
+      },
+      {
+        "key": "bedtime",
+        "title": "취침 전 (잠들기 30분~1시간 전)",
+        "icon": "🛌",
+        "time": "22:30",
+        "items": []
+      }
+    ],
+    "ddiWarnings": [],
+    "foodWarnings": [
+      {
+        "food": "술 (알코올) 및 과음",
+        "severity": "danger",
+        "reason": "알코올 섭취 시 치명적인 젖산산증 발생 위험이 급격히 증가하므로 반드시 금주해야 합니다.",
+        "relatedDrugs": [
+          "메트포르민"
+        ]
+      },
+      {
+        "food": "자몽 및 자몽주스",
+        "severity": "danger",
+        "reason": "체내 스타틴 농도가 3~4배 이상 폭증하여 횡문근융해증을 유발합니다.",
+        "relatedDrugs": [
+          "아토르바스타틴",
+          "암로디핀"
+        ]
+      },
+      {
+        "food": "술 (알코올)",
+        "severity": "warning",
+        "reason": "혈관 확장 작용이 겹쳐 급격한 저혈압 및 실신 위험이 증가합니다.",
+        "relatedDrugs": [
+          "암로디핀"
+        ]
+      },
+      {
+        "food": "탄산음료 / 매운 음식 / 카페인",
+        "severity": "warning",
+        "reason": "위산 역류를 악화시켜 약효를 반감시킵니다.",
+        "relatedDrugs": [
+          "오메프라졸"
+        ]
+      }
+    ],
+    "supplements": [
+      {
+        "drug": "메트포르민",
+        "tip": "장기 복용 시 비타민 B12 흡수가 저해될 수 있으므로 비타민 B군 영양제 섭취를 추천합니다."
+      },
+      {
+        "drug": "아토르바스타틴",
+        "tip": "스타틴 복용 시 체내 코엔자임Q10이 고갈되므로 CoQ10 영양제 병용을 권장합니다."
+      },
+      {
+        "drug": "암로디핀",
+        "tip": "마그네슘과 비타민D는 혈관 건강에 도움이 되나, 고용량 칼슘제는 약효에 영향을 줄 수 있으므로 2시간 이상 간격을 두고 복용하세요."
+      },
+      {
+        "drug": "오메프라졸",
+        "tip": "장기 복용 시 칼슘과 비타민 B12 흡수가 저하될 수 있으니 주기적인 보충이 좋습니다."
+      }
+    ],
+    "dietPlans": [
+      {
+        "condition": "만성 위염/역류성 식도염",
+        "recommend": [
+          "양배추, 브로콜리(비타민 U)",
+          "감자, 마(위점막 보호)",
+          "흰살생선",
+          "따뜻한 보리차"
+        ],
+        "avoid": [
+          "카페인(커피, 에너지음료)",
+          "맵고 자극적인 양념",
+          "밀가루, 야식 후 바로 눕기"
+        ],
+        "waterIntake": "식사 도중 많은 물 섭취를 피하고 식간에 마시기",
+        "keyTip": "식후 최소 2시간 동안은 눕지 마세요."
+      },
+      {
+        "condition": "당뇨병",
+        "recommend": [
+          "복합 탄수화물(현미, 귀리)",
+          "해조류(미역, 다시마)와 나물",
+          "단백질(닭가슴살, 두부, 계란)",
+          "채소-단백질-탄수화물 순서 식사"
+        ],
+        "avoid": [
+          "단순당(설탕, 액상과당, 믹스커피)",
+          "흰쌀밥, 떡, 빵(고GI 식품)",
+          "과일 통조림",
+          "야식"
+        ],
+        "waterIntake": "하루 2L 권장 (탈수 방지)",
+        "keyTip": "식사는 거르지 않고 정해진 시간에 드셔야 저혈당을 예방할 수 있습니다."
+      },
+      {
+        "condition": "고지혈증",
+        "recommend": [
+          "불포화지방산(올리브유, 들기름)",
+          "수용성 식이섬유(오트밀, 사과)",
+          "콩류 및 두부",
+          "자색 채소(가지, 적양파)"
+        ],
+        "avoid": [
+          "포화/트랜스지방(마가린, 튀김, 삼겹살)",
+          "내장류(곱창, 간)",
+          "자몽(스타틴 복용 시 절대 금기)"
+        ],
+        "waterIntake": "하루 1.5L 이상 섭취",
+        "keyTip": "스타틴 복용 환자는 코엔자임Q10 식품(견과류 등)을 챙기세요."
+      }
+    ],
+    "exercisePlan": {
+      "ageGroup": "청장년층 (20~40대)",
+      "recommend": [
+        "중강도 유산소 30분 (조깅, 수영, 자전거) 주 3~5회",
+        "주 2회 근력 운동"
+      ],
+      "intensity": "약간 숨이 차고 땀이 날 정도의 중강도",
+      "ageTip": "식후 30분~1시간 후 운동하면 혈당 스파이크 억제에 효과적입니다.",
+      "bmi": "18.4 (저체중 (점진적 근력 강화 권장))",
+      "medWarnings": []
+    },
+    "createdAt": "2026-10-30T10:02:20.632Z"
+  },
+  {
     "id": "rec_1793334284641_b6nck",
     "userId": "usr_patient01",
     "patientName": "김철수",

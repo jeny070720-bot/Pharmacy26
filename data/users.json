@@ -36,8 +36,52 @@
     "age": 19,
     "weight": 47,
     "conditions": [
-      "만성 위염/역류성 식도염"
+      "만성 위염/역류성 식도염",
+      "당뇨병",
+      "고지혈증"
     ],
     "createdAt": "2026-10-30T02:19:33.926Z"
+  },
+  {
+    "id": "usr_1793355103147_tgu5",
+    "username": "knup26girls",
+    "passwordHash": "ed5ac277b90295c7f4afe9a019d45ae594e7509ad804027ddad4996fc1789553",
+    "name": "경약인",
+    "gender": "여성",
+    "age": 20,
+    "weight": 50,
+    "conditions": [
+      "당뇨병",
+      "고지혈증",
+      "만성 위염/역류성 식도염"
+    ],
+    "createdAt": "2026-10-30T10:11:43.147Z"
+  },
+  {
+    "id": "usr_1793355261891_im4v",
+    "username": "knup26",
+    "passwordHash": "ed5ac277b90295c7f4afe9a019d45ae594e7509ad804027ddad4996fc1789553",
+    "name": "경약인",
+    "gender": "여성",
+    "age": 20,
+    "weight": 45,
+    "conditions": [],
+    "createdAt": "2026-10-30T10:14:21.891Z"
+  },
+  {
+    "id": "usr_1793355350449_1fn2",
+    "username": "knup26s",
+    "passwordHash": "ed5ac277b90295c7f4afe9a019d45ae594e7509ad804027ddad4996fc1789553",
+    "name": "경약인",
+    "gender": "여성",
+    "age": 20,
+    "weight": 45,
+    "conditions": [
+      "고혈압",
+      "당뇨병",
+      "만성 위염/역류성 식도염",
+      "만성신부전/신장질환"
+    ],
+    "createdAt": "2026-10-30T10:15:50.449Z"
   }
 ]
